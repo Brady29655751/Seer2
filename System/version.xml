@@ -45,4 +45,10 @@
         <minSkillId>100001</minSkillId>
         <maxSkillId>100082</maxSkillId>
     </skillData>
+    <missionData>
+        <mainCount>1</mainCount>
+        <sideCount>0</sideCount>
+        <dailyCount>0</dailyCount>
+        <eventCount>0</eventCount>
+    </missionData>
 </versionData>
