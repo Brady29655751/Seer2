@@ -1,0 +1,42 @@
+<petInfo id="146" name="大眼独角">
+    <basic id="146" baseId="146" name="大眼独角">
+        <elementId>5</elementId>
+        <baseStatus>
+            <atk>116</atk>
+            <mat>116</mat>
+            <def>113</def>
+            <mdf>113</mdf>
+            <spd>105</spd>
+            <hp>78</hp>
+        </baseStatus>
+        <gender>0</gender>    
+        <baseHeight>20</baseHeight>
+        <baseWeight>10</baseWeight>
+        <description>默默无闻的独角甲虫，大大的眼睛看起来傻兮兮的。</description>
+        <habitat>萨伦帝国入侵日</habitat>
+    </basic>
+    <feature>
+        <feature name="腐蚀">
+            <description>自身具有焦点腐蚀时，技能威力增加10</description>
+        </feature>
+        <emblems petId="146" emblemId="0" name="吸取">
+            <description>攻击技能未命中时吸取对手10怒气</description>
+        </emblems>
+    </feature>
+    <exp>
+        <expType>0</expType>
+        <evolvePetId>147</evolvePetId>
+        <evolveLevel>18</evolveLevel>
+        <beatExpParam>65</beatExpParam>
+    </exp>
+    <talent>
+    </talent>
+    <skills>
+        <ownSkill>
+            100067,100068,100053,100069
+        </ownSkill>
+        <learnLevel>
+            1,5,10,15
+        </learnLevel>
+    </skills>
+</petInfo>

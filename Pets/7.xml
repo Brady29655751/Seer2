@@ -1,0 +1,48 @@
+<petInfo id="7" name="拉奧">
+    <basic id="7" baseId="7" name="拉奧">
+        <elementId>1</elementId>
+        <baseStatus>
+            <atk>104</atk>
+            <mat>113</mat>
+            <def>123</def>
+            <mdf>128</mdf>
+            <spd>105</spd>
+            <hp>91</hp>
+        </baseStatus>
+        <gender>1</gender>    
+        <baseHeight>28</baseHeight>
+        <baseWeight>4</baseWeight>
+        <description>心地善良的小精灵，不愿看到任何精灵受到伤害。</description>
+        <habitat>新手任务</habitat>
+    </basic>
+    <feature>
+        <feature name="坚韧">
+            <description>体力低于1/4时，受到的伤害减少25%，且使种子爆弹必中并附加30点伤害</description>
+        </feature>
+        <emblems petId="7" emblemId="0" name="治愈">
+            <description>体力回复率提高20%</description>
+        </emblems>
+    </feature>
+    <exp>
+        <expType>0</expType>
+        <evolvePetId>8</evolvePetId>
+        <evolveLevel>20</evolveLevel>
+        <beatExpParam>65</beatExpParam>
+    </exp>
+    <talent>
+    </talent>
+    <skills>
+        <ownSkill>
+            100034,100035,100036,100037,100038,
+            100039,100040,100041,100042,100043,
+            100044,100045,100046,100047,100048,
+            100049,100017
+        </ownSkill>
+        <learnLevel>
+            1,5,10,15,20,
+            25,30,35,40,45,
+            50,55,60,65,70,
+            75,80
+        </learnLevel>
+    </skills>
+</petInfo>

@@ -1,0 +1,48 @@
+<petInfo id="3" name="迪兰特">
+    <basic id="3" baseId="1" name="迪兰特">
+        <elementId>2</elementId>
+        <baseStatus>
+            <atk>166</atk>
+            <mat>185</mat>
+            <def>164</def>
+            <mdf>171</mdf>
+            <spd>155</spd>
+            <hp>185</hp>
+        </baseStatus>
+        <gender>0</gender>    
+        <baseHeight>97</baseHeight>
+        <baseWeight>26</baseWeight>
+        <description>战斗时的它非常冷静，习惯看破对方的弱点加以攻击。</description>
+        <habitat>新手任务</habitat>
+    </basic>
+    <feature>
+        <feature name="终结">
+            <description>体力低于1/4时，消耗弱点记号的技能伤害增加25%，且使水泡必中并附加30点伤害</description>
+        </feature>
+        <emblems petId="1" emblemId="0" name="追击">
+            <description>命中率和闪避率提高10%</description>
+        </emblems>
+    </feature>
+    <exp>
+        <expType>0</expType>
+        <evolvePetId>0</evolvePetId>
+        <evolveLevel>0</evolveLevel>
+        <beatExpParam>125</beatExpParam>
+    </exp>
+    <talent>
+    </talent>
+    <skills>
+        <ownSkill>
+            100001,100002,100003,100004,100005,
+            100006,100007,100008,100009,100010,
+            100011,100012,100013,100014,100015,
+            100016,100017
+        </ownSkill>
+        <learnLevel>
+            1,5,10,15,20,
+            25,30,35,40,45,
+            50,55,60,65,70,
+            75,80
+        </learnLevel>
+    </skills>
+</petInfo>

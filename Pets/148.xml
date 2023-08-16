@@ -1,0 +1,48 @@
+<petInfo id="148" name="重甲独角">
+    <basic id="148" baseId="146" name="重甲独角">
+        <elementId>5</elementId>
+        <baseStatus>
+            <atk>176</atk>
+            <mat>176</mat>
+            <def>163</def>
+            <mdf>163</mdf>
+            <spd>145</spd>
+            <hp>178</hp>
+        </baseStatus>
+        <gender>0</gender>    
+        <baseHeight>80</baseHeight>
+        <baseWeight>60</baseWeight>
+        <description>它们是萨伦帝国士兵最普遍可见的随从精灵，但是因为过于平凡而不受重用。</description>
+        <habitat>萨伦帝国入侵日</habitat>
+    </basic>
+    <feature>
+        <feature name="腐蚀">
+            <description>自身具有焦点腐蚀时，技能威力增加10</description>
+        </feature>
+        <emblems petId="146" emblemId="0" name="吸取">
+            <description>攻击技能未命中时吸取对手10怒气</description>
+        </emblems>
+    </feature>
+    <exp>
+        <expType>0</expType>
+        <evolvePetId>0</evolvePetId>
+        <evolveLevel>0</evolveLevel>
+        <beatExpParam>125</beatExpParam>
+    </exp>
+    <talent>
+    </talent>
+    <skills>
+        <ownSkill>
+            100067,100068,100053,100069,100070,
+            100071,100072,100073,100074,100075,
+            100076,100077,100078,100079,100080,
+            100081,100082
+        </ownSkill>
+        <learnLevel>
+            1,5,10,15,20,
+            25,30,35,40,45,
+            50,55,60,65,70,
+            75,80
+        </learnLevel>
+    </skills>
+</petInfo>

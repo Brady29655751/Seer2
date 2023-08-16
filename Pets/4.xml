@@ -1,0 +1,42 @@
+<petInfo id="4" name="休咻">
+    <basic id="4" baseId="4" name="休咻">
+        <elementId>3</elementId>
+        <baseStatus>
+            <atk>130</atk>
+            <mat>112</mat>
+            <def>111</def>
+            <mdf>110</mdf>
+            <spd>120</spd>
+            <hp>79</hp>
+        </baseStatus>
+        <gender>0</gender>    
+        <baseHeight>35</baseHeight>
+        <baseWeight>8</baseWeight>
+        <description>做任何事都喜欢冲在最前面，一心想当迪兰、拉奥的队长。</description>
+        <habitat>新手任务</habitat>
+    </basic>
+    <feature>
+        <feature name="炎火">
+            <description>体力低于1/4时，火系技能造成的伤害增加25%，且使火焰必中并附加30点伤害</description>
+        </feature>
+        <emblems petId="4" emblemId="0" name="怒火">
+            <description>怒气回复率提高20%（攻击命中与回合结束回复的怒气除外）</description>
+        </emblems>
+    </feature>
+    <exp>
+        <expType>0</expType>
+        <evolvePetId>5</evolvePetId>
+        <evolveLevel>20</evolveLevel>
+        <beatExpParam>65</beatExpParam>
+    </exp>
+    <talent>
+    </talent>
+    <skills>
+        <ownSkill>
+            100018,100019,100020,100021
+        </ownSkill>
+        <learnLevel>
+            1,5,10,15
+        </learnLevel>
+    </skills>
+</petInfo>

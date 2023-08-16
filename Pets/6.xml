@@ -1,0 +1,48 @@
+<petInfo id="6" name="休罗斯">
+    <basic id="6" baseId="4" name="休罗斯">
+        <elementId>3</elementId>
+        <baseStatus>
+            <atk>190</atk>
+            <mat>162</mat>
+            <def>161</def>
+            <mdf>160</mdf>
+            <spd>170</spd>
+            <hp>179</hp>
+        </baseStatus>
+        <gender>0</gender>    
+        <baseHeight>72</baseHeight>
+        <baseWeight>34</baseWeight>
+        <description>过大的信心有时让人觉得是虚张声势，有时又非常可靠。</description>
+        <habitat>新手任务</habitat>
+    </basic>
+    <feature>
+        <feature name="炎火">
+            <description>体力低于1/4时，火系技能造成的伤害增加25%，且使火焰必中并附加30点伤害</description>
+        </feature>
+        <emblems petId="4" emblemId="0" name="怒火">
+            <description>怒气回复率提高20%（攻击命中与回合结束回复的怒气除外）</description>
+        </emblems>
+    </feature>
+    <exp>
+        <expType>0</expType>
+        <evolvePetId>0</evolvePetId>
+        <evolveLevel>0</evolveLevel>
+        <beatExpParam>125</beatExpParam>
+    </exp>
+    <talent>
+    </talent>
+    <skills>
+        <ownSkill>
+            100018,100019,100020,100021,100022,
+            100023,100024,100025,100026,100027,
+            100028,100029,100030,100031,100032,
+            100033,100017
+        </ownSkill>
+        <learnLevel>
+            1,5,10,15,20,
+            25,30,35,40,45,
+            50,55,60,65,70,
+            75,80
+        </learnLevel>
+    </skills>
+</petInfo>

@@ -1,0 +1,48 @@
+<petInfo id="12" name="法伊娜">
+    <basic id="12" baseId="10" name="法伊娜">
+        <elementId>0</elementId>
+        <baseStatus>
+            <atk>174</atk>
+            <mat>175</mat>
+            <def>161</def>
+            <mdf>162</mdf>
+            <spd>148</spd>
+            <hp>177</hp>
+        </baseStatus>
+        <gender>1</gender>    
+        <baseHeight>99</baseHeight>
+        <baseWeight>40</baseWeight>
+        <description>在寂静的星空里，似乎有法伊娜信奉的力量。</description>
+        <habitat>异蘑世界</habitat>
+    </basic>
+    <feature>
+        <feature name="入梦">
+            <description>首发时可以进入精灵的梦境</description>
+        </feature>
+        <emblems petId="10" emblemId="0" name="魅惑">
+            <description>免疫魅惑状态</description>
+        </emblems>
+    </feature>
+    <exp>
+        <expType>0</expType>
+        <evolvePetId>0</evolvePetId>
+        <evolveLevel>0</evolveLevel>
+        <beatExpParam>120</beatExpParam>
+    </exp>
+    <talent>
+    </talent>
+    <skills>
+        <ownSkill>
+            100050,100051,100052,100053,100054,
+            100055,100056,100057,100058,100059,
+            100060,100061,100062,100063,100064,
+            100065,100066
+        </ownSkill>
+        <learnLevel>
+            1,5,10,15,20,
+            25,30,35,40,45,
+            50,55,60,65,70,
+            75,80
+        </learnLevel>
+    </skills>
+</petInfo>

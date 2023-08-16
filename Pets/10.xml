@@ -1,0 +1,42 @@
+<petInfo id="10" name="法拉">
+    <basic id="10" baseId="10" name="法拉">
+        <elementId>0</elementId>
+        <baseStatus>
+            <atk>114</atk>
+            <mat>115</mat>
+            <def>111</def>
+            <mdf>112</mdf>
+            <spd>108</spd>
+            <hp>77</hp>
+        </baseStatus>
+        <gender>1</gender>    
+        <baseHeight>32</baseHeight>
+        <baseWeight>5</baseWeight>
+        <description>当有部落居民的时候，法拉就已在阿卡迪亚星球生活了很久很久。</description>
+        <habitat>异蘑世界</habitat>
+    </basic>
+    <feature>
+        <feature name="入梦">
+            <description>首发时可以进入精灵的梦境</description>
+        </feature>
+        <emblems petId="10" emblemId="0" name="魅惑">
+            <description>免疫魅惑状态</description>
+        </emblems>
+    </feature>
+    <exp>
+        <expType>0</expType>
+        <evolvePetId>11</evolvePetId>
+        <evolveLevel>18</evolveLevel>
+        <beatExpParam>60</beatExpParam>
+    </exp>
+    <talent>
+    </talent>
+    <skills>
+        <ownSkill>
+            100050,100051,100052,100053
+        </ownSkill>
+        <learnLevel>
+            1,5,10,15
+        </learnLevel>
+    </skills>
+</petInfo>
