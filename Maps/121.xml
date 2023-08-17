@@ -37,7 +37,7 @@
 					</settings>
 					<enemy>
 						<pet id="10" level="2">
-							<loopSkill>100050</loopSkill>
+							<loopSkill>10050</loopSkill>
 						</pet>
 					</enemy>
 				</branch>
@@ -57,7 +57,7 @@
 					</settings>
 					<enemy>
 						<pet id="10" level="3">
-							<loopSkill>100050</loopSkill>
+							<loopSkill>10050</loopSkill>
 						</pet>
 					</enemy>
 				</branch>
@@ -77,7 +77,7 @@
 					</settings>
 					<enemy>
 						<pet id="10" level="4">
-							<loopSkill>100050</loopSkill>
+							<loopSkill>10050</loopSkill>
 						</pet>
 					</enemy>
 				</branch>

@@ -60,26 +60,26 @@
 					</settings>
 					<enemy>
 						<pet id="146" level="10">
-							<headerSkill>100053</headerSkill>
-							<loopSkill>100069</loopSkill>
+							<headerSkill>10053</headerSkill>
+							<loopSkill>10069</loopSkill>
 						</pet>
 						<pet id="146" level="15">
-							<headerSkill>100053</headerSkill>
-							<loopSkill>100069</loopSkill>
+							<headerSkill>10053</headerSkill>
+							<loopSkill>10069</loopSkill>
 						</pet>
 						<pet id="146" level="20">
-							<headerSkill>100053</headerSkill>
-							<loopSkill>100069</loopSkill>
+							<headerSkill>10053</headerSkill>
+							<loopSkill>10069</loopSkill>
 						</pet>
 						<pet id="147" level="25">
-							<loopSkill>100070,100071</loopSkill>
+							<loopSkill>10070,10071</loopSkill>
 						</pet>
 						<pet id="147" level="30">
-							<loopSkill>100070,100071</loopSkill>
+							<loopSkill>10070,10071</loopSkill>
 						</pet>
 						<pet id="147" level="35">
-							<headerSkill>100053,100069</headerSkill>
-							<loopSkill>100070,100072</loopSkill>
+							<headerSkill>10053,10069</headerSkill>
+							<loopSkill>10070,10072</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -166,24 +166,24 @@
 					</settings>
 					<enemy>
 						<pet id="147" level="40">
-							<loopSkill>100070,100071</loopSkill>
+							<loopSkill>10070,10071</loopSkill>
 						</pet>
 						<pet id="148" level="50">
-							<loopSkill>100074,100075</loopSkill>
+							<loopSkill>10074,10075</loopSkill>
 						</pet>
 						<pet id="148" level="60">
-							<headerSkill>100069</headerSkill>
-							<loopSkill>100074,100076</loopSkill>
+							<headerSkill>10069</headerSkill>
+							<loopSkill>10074,10076</loopSkill>
 						</pet>
 						<pet id="148" level="65">
-							<loopSkill>100079</loopSkill>
+							<loopSkill>10079</loopSkill>
 						</pet>
 						<pet id="148" level="70">
-							<loopSkill>100080</loopSkill>
+							<loopSkill>10080</loopSkill>
 						</pet>
 						<pet id="148" level="75">
-							<headerSkill>100069</headerSkill>
-							<loopSkill>100074,100076</loopSkill>
+							<headerSkill>10069</headerSkill>
+							<loopSkill>10074,10076</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -247,7 +247,7 @@
 								<hp>10000</hp>
 							</status>
 							<initBuff>13,14,17</initBuff>
-							<loopSkill>100070,100081,100081</loopSkill>
+							<loopSkill>10070,10081,10081</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>

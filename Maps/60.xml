@@ -247,7 +247,7 @@
 							<status>
 								<hp>40</hp>
 							</status>
-							<loopSkill>100002</loopSkill>
+							<loopSkill>10002</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -279,7 +279,7 @@
 								<hp>100</hp>
 							</status>
 							<initBuff>23</initBuff>
-							<loopSkill>100007</loopSkill>
+							<loopSkill>10007</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -320,8 +320,8 @@
 								<atk>100</atk>
 								<hp>250</hp>
 							</status>
-							<headerSkill>100003</headerSkill>
-							<loopSkill>100010</loopSkill>
+							<headerSkill>10003</headerSkill>
+							<loopSkill>10010</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -374,7 +374,7 @@
 								<hp>350</hp>
 							</status>
 							<initBuff>12</initBuff>
-							<loopSkill>100016,100011</loopSkill>
+							<loopSkill>10016,10011</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -424,7 +424,7 @@
 								<hp>500</hp>
 							</status>
 							<initBuff>18</initBuff>
-							<loopSkill>100016,100011</loopSkill>
+							<loopSkill>10016,10011</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -558,7 +558,7 @@
 							<status>
 								<hp>40</hp>
 							</status>
-							<loopSkill>100019</loopSkill>
+							<loopSkill>10019</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -589,8 +589,8 @@
 							<status>
 								<hp>100</hp>
 							</status>
-							<headerSkill>100021,100020,100020</headerSkill>
-							<loopSkill>100024,100022</loopSkill>
+							<headerSkill>10021,10020,10020</headerSkill>
+							<loopSkill>10024,10022</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -632,7 +632,7 @@
 								<mdf>99999</mdf>
 								<hp>250</hp>
 							</status>
-							<loopSkill>100026,100025,100026</loopSkill>
+							<loopSkill>10026,10025,10026</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -675,7 +675,7 @@
 								<hp>350</hp>
 							</status>
 							<initBuff>13</initBuff>
-							<loopSkill>100027</loopSkill>
+							<loopSkill>10027</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -716,7 +716,7 @@
 								<hp>1500</hp>
 							</status>
 							<initBuff>13,19</initBuff>
-							<loopSkill>100031,100032</loopSkill>
+							<loopSkill>10031,10032</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -841,7 +841,7 @@
 							<status>
 								<hp>40</hp>
 							</status>
-							<loopSkill>100035</loopSkill>
+							<loopSkill>10035</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -872,8 +872,8 @@
 							<status>
 								<hp>100</hp>
 							</status>
-							<headerSkill>100037,100039,100039</headerSkill>
-							<loopSkill>100037,100036,100036,100036</loopSkill>
+							<headerSkill>10037,10039,10039</headerSkill>
+							<loopSkill>10037,10036,10036,10036</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -914,7 +914,7 @@
 								<mat>400</mat>
 								<hp>150</hp>
 							</status>
-							<loopSkill>100037,100038,100044</loopSkill>
+							<loopSkill>10037,10038,10044</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -956,8 +956,8 @@
 								<mdf>99999</mdf>
 								<hp>250</hp>
 							</status>
-							<headerSkill>100045</headerSkill>
-							<loopSkill>100047</loopSkill>
+							<headerSkill>10045</headerSkill>
+							<loopSkill>10047</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
@@ -999,7 +999,7 @@
 								<mdf>99999</mdf>
 								<hp>500</hp>
 							</status>
-							<loopSkill>100037,100048,100049,100036</loopSkill>
+							<loopSkill>10037,10048,10049,10036</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
