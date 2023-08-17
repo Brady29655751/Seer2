@@ -176,10 +176,10 @@
 				</button>
 			</eventHandler>
 		</npc>
-		<npc id="6002" resId="Pets/3/pet" name="迪兰特" size="100,108" pos="60,140" namePos="20,0">
+		<npc id="6002" resId="Pets/3/pet.png" name="迪兰特" size="100,108" pos="60,140" namePos="20,0">
 			<description><![CDATA[主宠训练营——迪兰特]]></description>
 			<dialog>
-				<branch id="default" name="迪兰特" icon="Pets/3/pet" size="100,108" pos="-10,45">
+				<branch id="default" name="迪兰特" icon="Pets/3/pet.png" size="100,108" pos="-10,45">
 					<content><![CDATA[水系主宠训练营的训练，需要有聪颖的智慧，你们准备好了吗？]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -218,7 +218,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="wrong_pet" name="迪兰特" icon="Pets/3/pet" size="100,108" pos="-10,45">
+				<branch id="wrong_pet" name="迪兰特" icon="Pets/3/pet.png" size="100,108" pos="-10,45">
 					<content><![CDATA[将迪兰、迪迪兰或迪兰特设为首发精灵再来挑战吧！]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -228,7 +228,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="done" name="迪兰特" icon="Pets/3/pet" size="100,108" pos="-10,45">
+				<branch id="done" name="迪兰特" icon="Pets/3/pet.png" size="100,108" pos="-10,45">
 					<content><![CDATA[你的水系主宠今天已经训练过了，明天再来吧！]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -487,10 +487,10 @@
 				</button>
 			</eventHandler>
 		</npc>
-		<npc id="6003" resId="Pets/6/pet" name="休罗斯" size="134,109" pos="190,95" namePos="10,-5">
+		<npc id="6003" resId="Pets/6/pet.png" name="休罗斯" size="134,109" pos="190,95" namePos="10,-5">
 			<description><![CDATA[主宠训练营——休罗斯]]></description>
 			<dialog>
-				<branch id="default" name="休罗斯" icon="Pets/6/pet" size="134,109" pos="5,50">
+				<branch id="default" name="休罗斯" icon="Pets/6/pet.png" size="134,109" pos="5,50">
 					<content><![CDATA[火系主宠训练营的训练，需要有强健的体能，你们准备好了吗？]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -529,7 +529,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="wrong_pet" name="休罗斯" icon="Pets/6/pet" size="134,109" pos="5,50">
+				<branch id="wrong_pet" name="休罗斯" icon="Pets/6/pet.png" size="134,109" pos="5,50">
 					<content><![CDATA[将休咻、休伊尔或休罗斯设为首发精灵再来挑战吧！]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -539,7 +539,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="done" name="休罗斯" icon="Pets/6/pet" size="134,109" pos="5,50">
+				<branch id="done" name="休罗斯" icon="Pets/6/pet.png" size="134,109" pos="5,50">
 					<content><![CDATA[你的火系主宠今天已经训练过了，明天再来吧！]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -770,10 +770,10 @@
 				</button>
 			</eventHandler>
 		</npc>
-		<npc id="6004" resId="Pets/9/pet" name="拉奥叶" size="131,119" pos="365,100" namePos="0,-15">
+		<npc id="6004" resId="Pets/9/pet.png" name="拉奥叶" size="131,119" pos="365,100" namePos="0,-15">
 			<description><![CDATA[主宠训练营——拉奥叶]]></description>
 			<dialog>
-				<branch id="default" name="拉奥叶" icon="Pets/9/pet" size="131,119" pos="0,45">
+				<branch id="default" name="拉奥叶" icon="Pets/9/pet.png" size="131,119" pos="0,45">
 					<content><![CDATA[草系主宠训练营的训练，需要有坚强的耐力，你们准备好了吗？]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -812,7 +812,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="wrong_pet" name="拉奥叶" icon="Pets/9/pet" size="131,119" pos="0,45">
+				<branch id="wrong_pet" name="拉奥叶" icon="Pets/9/pet.png" size="131,119" pos="0,45">
 					<content><![CDATA[将拉奥、拉奥苗或拉奥叶设为首发精灵再来挑战吧！]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -822,7 +822,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="done" name="拉奥叶" icon="Pets/9/pet" size="131,119" pos="0,45">
+				<branch id="done" name="拉奥叶" icon="Pets/9/pet.png" size="131,119" pos="0,45">
 					<content><![CDATA[你的草系主宠今天已经训练过了，明天再来吧！]]></content>
 					<replyHandler>
 						<reply type="click">
