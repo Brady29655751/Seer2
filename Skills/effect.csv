@@ -14,7 +14,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 10011,on_after_dmg_cal\on_before_attack\on_after_attack,-1\-1\-1,skill\skill\pet,status\buff\buff,status_type=5&op=<&cmp_value=1/4\who=op&id=3000\who=op&id=3000,set_damage\set_skill\remove_buff,op=*&value=5/4\type=power&op=+&value=op.pet.buff[3000].value*50\who=op&id=3000
 10012,on_after_attack,-1,pet,none,none,add_buff,id=16&turn=5&val=50
 10013,on_after_attack,-1,pet,none,none,add_buff,who=op&id=1000
-10014,on_after_attack,-1,pet,none,none,add_buff,who=op&id=3013&turn=5
+10014,on_after_attack\on_after_dmg_cal,-1\-1,pet\skill,none\buff,none\who=op&id=1000,add_buff\set_damage,who=op&id=3013&turn=5\op=*&value=3/2
 10015,on_after_attack,-1,pet,none,none,add_buff,who=op&id=1000
 10016,on_after_attack,-1,pet,none,none,add_buff,who=op&id=3000&value=2
 10017,on_before_attack,-1,skill,none,none,set_skill,type=combo&op=SET&value=3
