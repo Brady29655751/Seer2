@@ -53,7 +53,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 10050,none,-1,none,none,none,none,none
 10051,on_after_attack,-1000,pet,status,who=op&status_type=5&cmp_value=0,heal,who=op&set=1
 10052,none,-1,none,none,none,none,none
-10053,on_after_attack\on_after_attack,-1\-1,pet\pet,none\none,none\none,add_buff\add_buff,id=3021&value=15&turn=-1\id=3012&turn=-1
+10053,on_after_attack\on_after_attack,-1\-1,pet\pet,none\none,none\none,add_buff\add_buff,id=3021&value=25&turn=-1\id=3012&turn=-1
 10054,on_after_attack,-1,pet,none,none,add_buff,id=3022&turn=6
 10055,on_before_attack,-1,skill,status,who=op&status_type=5&cmp_value=1/1,set_skill,type=power&op=*&value=2
 10056,on_before_attack,-1,skill,status,who=op&status_type=5&op=<&cmp_value=1/4,set_skill,type=power&op=*&value=4
