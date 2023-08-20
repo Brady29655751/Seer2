@@ -38,7 +38,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 3003,on_final_dmg_cal\on_after_attack\on_after_attack,1000\-1\0,skill\pet\pet,skill\skill\skill,type=type&type_op=>&type_cmp=0\type=type&type_op=>&type_cmp=0\type=type&type_op=>&type_cmp=0,set_damage\heal\remove_buff,op=*&value=1/2\add=-me.skill.damage\id=3003
 3012,on_dmg_cal,100,pet,skill,type=type&type_cmp=2,set_skill,type=def&op=*&value=3/4
 3013,on_add_buff\on_remove_buff,-1\-1,pet\pet,none\none,none\none,add_status\add_status,type=6&add=-15\type=6&add=15
-3014,on_before_attack\on_after_attack,900\-1,skill\pet,skill\skill,type=id&id_op=NOT&id_cmp=10024\type=id&id_op=NOT&id_cmp=100024,set_skill\remove_buff,type=power&op=+&value=50\id=3014
+3014,on_before_attack\on_after_attack,900\-1,skill\pet,skill\skill,type=id/type&id_op=NOT&id_cmp=10024&type_op=>&type_cmp=0\type=id/type&id_op=NOT&id_cmp=100024&type_op=>&type_cmp=0,set_skill\remove_buff,type=power&op=+&value=50\id=3014
 3015,on_before_attack\on_after_attack,-1\-1,skill\pet,none\none,none\none,set_skill\remove_buff,type=accuracy&op=+&value=1000\id=3015
 3016,on_after_dmg_cal\on_after_attack,-1\-1,skill\pet,none\none,none\none,set_damage\remove_buff,op=*&value=2\id=3016
 3017,on_after_attack\on_remove_buff,-1000\-1,pet\pet,status\none,whos_turn=op&status_type=5&cmp_value=0\whos_turn=op,remove_buff\heal,id=3017\set=1
