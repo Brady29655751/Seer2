@@ -234,7 +234,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="boss" name="【青蜂队长】巴卢特" icon="10101" size="100,115" pos="-10,30">
+				<branch id="boss" name="【青蜂队长】巴卢特" icon="10101" size="100,115" pos="0,30">
 					<content><![CDATA[说实话，你的实力超出我的预期。接下来就由我【青蜂队长】巴卢特亲自出马！]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -244,7 +244,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="pet_help" name="重甲独角" icon="Pets/148/pet.png" size="115,120" pos="-15,25">
+				<branch id="pet_help" name="重甲独角" icon="Pets/148/pet.png" size="115,120" pos="0,25">
 					<content><![CDATA[等等！这次我来帮助你对抗青蜂队长！我在萨伦帝国不论怎么努力都不受重用，你的实力强大，我想跟随你获得更多的锻炼机会！]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -254,7 +254,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="boss_escape" name="【青蜂队长】巴卢特" icon="10101" size="100,115" pos="-10,30">
+				<branch id="boss_escape" name="【青蜂队长】巴卢特" icon="10101" size="100,115" pos="0,30">
 					<content><![CDATA[哼！算你走运，我们撤！]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -316,7 +316,7 @@
 						<weather>13</weather>
 					</settings>
 					<player>
-						<pet id="146" level="100">
+						<pet id="148" level="100">
 							<status>
 								<atk>600</atk>
 								<hp>10000</hp>
