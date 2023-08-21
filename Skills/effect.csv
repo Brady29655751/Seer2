@@ -86,7 +86,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 10083,none,-1,none,none,none,none,none
 10084,on_after_attack,-1,pet,none,none,add_buff,who=op&id=3279&value=1
 10085,on_after_attack,-1,pet,buff,who=op&id=3279,add_buff,who=op&id=1003
-10086,on_after_attack\on_after_attack,-1\0,pet\pet,buff\buff,who=op&id=3279\who=op&id=3279,add_buff\set_buff,who=op&id=1003\who=op&id=3279&type=value&op=-&value=1
+10086,on_after_attack\on_after_attack,-1\0,pet\pet,buff\buff,who=op&id=3279\who=op&id=3279,add_buff\set_buff,who=op&id=104\who=op&id=3279&type=value&op=-&value=1
 10087,on_after_attack\on_after_attack\on_after_attack,-1\-1\0,pet\pet\pet,buff\buff\buff,who=op&id=3279&own=false\who=op&id=3279&own=true\who=op&id=3279&own=true,powerup\powerup\set_buff,mat=1\spd=1\who=op&id=3279&type=value&op=-&value=1
 10088,on_after_attack\on_after_attack,-1\0,pet\pet,buff\buff,who=op&id=3279\who=op&id=3279,heal\remove_buff,add=op.pet.buff[3279].value*60\who=op&id=3279
 10089,on_after_dmg_cal\on_after_dmg_cal,900\901,skill\pet,buff\buff,who=op&id=3279\who=op&id=3279,set_damage\set_buff,op=+&value=50\who=op&id=3279&type=value&op=-&value=1
