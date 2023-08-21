@@ -58,8 +58,10 @@ id,name,type,copyType,turn,options,description
 100007,坚韧,feature,new,-1,none,体力低于1/4时，受到的伤害减少25%，且使种子爆弹必中并附加30点伤害
 100010,入梦,feature,new,-1,none,首发时可以进入精灵的梦境
 100146,腐蚀,feature,new,-1,none,自身具有焦点腐蚀时，技能威力增加10
+100151,青蜂,feature,new,-1,none,攻击技能命中处于中毒状态的对手会重置中毒状态为3回合
 200001,追击,emblem,new,-1,none,命中率和闪避率提高10%
 200004,怒火,emblem,new,-1,none,怒气回复率提高20%（攻击命中与回合结束回复的怒气除外）
 200007,治愈,emblem,new,-1,none,体力回复率提高20%
 200010,魅惑,emblem,new,-1,none,免疫魅惑状态
 200146,吸取,emblem,new,-1,none,攻击技能未命中时吸取对手10怒气
+200151,蜂纹,emblem,new,-1,none,对手具有蜂纹时，自身攻击技能造成伤害的1/10会恢复自身的体力

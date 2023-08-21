@@ -90,7 +90,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 10087,on_after_attack\on_after_attack\on_after_attack,-1\-1\0,pet\pet\pet,buff\buff\buff,who=op&id=3279&own=false\who=op&id=3279&own=true\who=op&id=3279&own=true,powerup\powerup\set_buff,mat=1\spd=1\who=op&id=3279&type=value&op=-&value=1
 10088,on_after_attack\on_after_attack,-1\0,pet\pet,buff\buff,who=op&id=3279\who=op&id=3279,heal\remove_buff,add=op.pet.buff[3279].value*60\who=op&id=3279
 10089,on_after_dmg_cal\on_after_dmg_cal,900\901,skill\pet,buff\buff,who=op&id=3279\who=op&id=3279,set_damage\set_buff,op=+&value=50\who=op&id=3279&type=value&op=-&value=1
-10090,on_after_attack,-1,pet,none,none,heal,add=me.skill.damage/2
+10090,on_after_attack,-1,pet,none,none,heal,add=me.skill.damage/4
 10091,on_after_attack,-1,pet,none,none,add_buff,who=op&id=3279&value=1
 10092,on_before_attack,-1,skill,none,none,set_skill,type=combo&op=SET&value=3+op.pet.buff[3279].value
 10093,on_after_attack,-1,pet,none,none,add_buff,id=3280&turn=3
