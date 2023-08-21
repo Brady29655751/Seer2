@@ -26,7 +26,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 25,on_after_dmg_cal,1000,skill,skill,whos_turn=op&who=op&type=type&type_cmp=1,set_damage,who=op&op=SET&value=0
 26,on_after_dmg_cal,1000,skill,skill,whos_turn=op&who=op&type=type&type_cmp=2,set_damage,who=op&op=SET&value=0
 101,none,-1,none,none,none,none,none
-104,on_add_buff\on_turn_start,-1\-1,pet\pet,none\none,none\none,set_buff\set_buff,id=104&value=random[0~99]\id=104&value=random[0~99]
+104,on_add_buff\on_turn_start,-1\-1,pet\pet,none\none,none\none,set_buff\set_buff,id=104&type=value&op=SET&value=random[0~99]\id=104&type=value&op=SET&value=random[0~99]
 1000,on_add_buff\on_remove_buff\on_turn_end,-1\-1\100,pet\pet\pet,none\none\none,none\none\none,add_status\add_status\set_damage,type=6&add=-10\type=6&add=10\type=buff&op=+&value=me.pet.status.maxHp*1/8
 1001,on_after_dmg_cal\on_turn_end,0\100,skill\pet,skill\none,type=type&type_cmp=1\none,set_damage\set_damage,op=*&value=3/4\type=buff&op=+&value=me.pet.status.maxHp*1/8
 1003,on_add_buff\on_remove_buff\on_turn_end,-1\-1\100,pet\pet\pet,none\none\none,none\none\none,add_status\add_status\set_damage,type=10&add=-15\type=10&add=15\type=buff&op=+&value=me.pet.status.maxHp*1/8
