@@ -42,9 +42,9 @@
         <topicPetId>3,6,9,12,148</topicPetId>
     </petData>
     <skillData>
-        <skillNum>95</skillNum>
+        <skillNum>111</skillNum>
         <minSkillId>10001</minSkillId>
-        <maxSkillId>10095</maxSkillId>
+        <maxSkillId>10111</maxSkillId>
     </skillData>
     <missionData>
         <mainCount>1</mainCount>
