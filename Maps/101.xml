@@ -319,6 +319,7 @@
 						<pet id="148" level="100">
 							<status>
 								<atk>3000</atk>
+								<mat>3000</mat>
 								<hp>10000</hp>
 							</status>
 							<initBuff>13,14</initBuff>
