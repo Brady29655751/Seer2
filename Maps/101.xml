@@ -345,8 +345,8 @@
 					<enemy>
 						<pet id="153" level="100">
 							<status>
-								<atk>1000</atk>
-								<mat>1000</mat>
+								<atk>1500</atk>
+								<mat>1500</mat>
 								<hp>30000</hp>
 							</status>
 							<initBuff>13,14,17</initBuff>

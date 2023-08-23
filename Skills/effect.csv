@@ -92,7 +92,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 10089,on_after_dmg_cal\on_after_dmg_cal,900\901,skill\pet,buff\buff,who=op&id=3279\who=op&id=3279,set_damage\set_buff,op=+&value=50\who=op&id=3279&type=value&op=-&value=1
 10090,on_after_attack,-1,pet,none,none,heal,add=me.skill.damage/4
 10091,on_after_attack,-1,pet,none,none,add_buff,who=op&id=3279&value=1
-10092,on_before_attack,-1,skill,none,none,set_skill,type=combo&op=SET&value=3+op.pet.buff[3279].value
+10092,on_before_attack\on_after_attack,-1\-1,skill\pet,none\none,none\none,set_skill\remove_buff,type=combo&op=SET&value=3+op.pet.buff[3279].value\who=op&id=3279
 10093,on_after_attack,-1,pet,none,none,add_buff,id=3280&turn=3
 10094,on_after_attack,-1,pet,buff,who=op&id=3279,set_buff,who=op&id=3279&type=value&op=SET&value=3
 10095,on_before_attack,-1,skill,none,none,set_skill,type=combo&op=SET&value=random[9~15]
