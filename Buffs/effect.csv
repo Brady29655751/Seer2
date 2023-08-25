@@ -68,3 +68,5 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 200010,on_add_buff\on_remove_buff,-1\-1,pet\pet,none\none,none\none,block_buff\block_buff,op=+&id_list=101\op=-&id_list=101
 200146,on_after_attack\on_after_attack,-1\-1,pet\pet,skill\skill,is_hit=false&type=type&type_op=>&type_cmp=0\is_hit=false&type=type&type_op=>&type_cmp=0,rage\rage,add=10\who=op&add=-10
 200151,on_after_attack,-100,skill,buff,who=op&id=3279,heal,add=me.skill.damage*1/10
+900001,on_after_attack,-1,pet,skill,weather=2&type=type&type_op=>&type_cmp=0,rage,add=5
+800001,on_before_dmg_cal,-1,pet,skill,type=element&element_cmp=16,set_skill,type=sameElement&op=SET&value=1.5

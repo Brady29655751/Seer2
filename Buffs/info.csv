@@ -68,3 +68,5 @@ id,name,type,copyType,turn,options,description
 200010,魅惑,emblem,new,-1,none,免疫魅惑状态
 200146,吸取,emblem,new,-1,none,攻击技能未命中时吸取对手10怒气
 200151,蜂纹,emblem,new,-1,none,对手具有蜂纹时，自身攻击技能造成伤害的1/10会恢复自身的体力
+900001,伊优,feature,new,-1,none,雨天环境下使用攻击技能回复自身5怒气
+800001,龙牙,emblem,new,-1,none,使用龙系技能同样适用本系加成
