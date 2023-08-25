@@ -107,7 +107,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 10104,on_before_attack\on_before_attack,-1\0,skill\skill,none\last_skill,none\type=element&element_cmp=16,set_skill\set_skill,type=combo&op=SET&value=random[5~8]\type=combo&op=+&value=2
 10105,on_after_attack\on_after_attack,-1\-1,pet\pet,none\none,none\weather=2,powerup\powerup,mat=1&mdf=1\spd=1
 10106,on_after_attack,-1,pet,none,weather=2,rage,add=20
-10107,on_before_attack,-1,skill,last_skilltype=element&element_cmp=16,set_skill,type=power&op=+&value=40
+10107,on_before_attack,-1,skill,last_skill,type=element&element_cmp=16,set_skill,type=power&op=+&value=40
 10108,on_before_dmg_cal,-1,pet,none,none,set_skill,type=elementRelation&op=SET&value=me.skill.elementRelation[MAX]1
 10109,on_after_attack,-1,state,none,none,set_weather,weather=2
 10110,on_after_attack\on_after_attack,-1\-1,pet\pet,none\none,none\none,powerup\add_buff,who=op&atk=1\who=op&id=113
