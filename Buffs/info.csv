@@ -44,7 +44,7 @@ id,name,type,copyType,turn,options,description
 3001,易伤,mark,block,-1,none,受到的伤害增加50%
 3002,寄生炸弹,turn,replace,3,keep=false,爆炸时损失300点体力（若精灵换场则不保留）
 3003,迷惑,chance,replace,-1,none,使对手下一次造成的伤害减半并且另一半由对手承担
-3008,魔焰裂空击,mark,block,5,res=27,暴击率增加15%
+3008,魔焰裂空击,mark,replace,5,res=27,暴击率增加15%
 3009,暴击率提升,mark,block,-1,res=27,暴击率增加15%
 3010,暴击伤害提升,mark,block,-1,res=28,暴击时造成的伤害增加50%
 3011,玩水,turn,replace,5,res=16&keep=false,受到的火系攻击伤害减半
