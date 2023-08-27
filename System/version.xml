@@ -7,7 +7,7 @@
         【版本日期】2023/08/20
         当前版本为单机测试版本，仅供测试基本功能是否正常。
 
-        【更新精灵】迪兰特、休罗斯、拉奥叶、法伊娜、重甲独角、青蜂
+        【更新精灵】主宠、法伊娜、重甲独角、青蜂
         【更新活动】主宠训练营、萨伦帝国入侵日
     </releaseNote>
     <mailData>
@@ -36,15 +36,15 @@
         </dailyLoginMail>
     </mailData>
     <petData>
-        <petNum>15</petNum>
-        <minPetId>1</minPetId>
+        <petNum>24</petNum>
+        <minPetId>-3</minPetId>
         <maxPetId>153</maxPetId>
-        <topicPetId>3,6,9,12,148,153</topicPetId>
+        <topicPetId>3,6,9,-3,-6,12,148,153</topicPetId>
     </petData>
     <skillData>
-        <skillNum>111</skillNum>
+        <skillNum>127</skillNum>
         <minSkillId>10001</minSkillId>
-        <maxSkillId>10111</maxSkillId>
+        <maxSkillId>10127</maxSkillId>
     </skillData>
     <missionData>
         <mainCount>1</mainCount>
