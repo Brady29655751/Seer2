@@ -37,14 +37,14 @@
     </mailData>
     <petData>
         <petNum>24</petNum>
-        <minPetId>-3</minPetId>
+        <minPetId>-9</minPetId>
         <maxPetId>153</maxPetId>
-        <topicPetId>3,6,9,-3,-6,12,148,153</topicPetId>
+        <topicPetId>3,6,9,-3,-6,-9,12,148,153</topicPetId>
     </petData>
     <skillData>
-        <skillNum>127</skillNum>
+        <skillNum>142</skillNum>
         <minSkillId>10001</minSkillId>
-        <maxSkillId>10127</maxSkillId>
+        <maxSkillId>10142</maxSkillId>
     </skillData>
     <missionData>
         <mainCount>1</mainCount>

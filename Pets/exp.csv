@@ -23,3 +23,6 @@ id,expType,evolvePetId,evolveLevel,beatExpParam
 -4,0,-5,20,65
 -5,0,-6,40,95
 -6,0,0,0,125
+-7,0,-8,20,65
+-8,0,-9,40,95
+-9,0,0,0,125
