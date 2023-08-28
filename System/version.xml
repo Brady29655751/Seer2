@@ -36,7 +36,7 @@
         </dailyLoginMail>
     </mailData>
     <petData>
-        <petNum>24</petNum>
+        <petNum>27</petNum>
         <minPetId>-9</minPetId>
         <maxPetId>153</maxPetId>
         <topicPetId>3,6,9,-3,-6,-9,12,148,153</topicPetId>
