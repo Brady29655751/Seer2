@@ -132,7 +132,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 10129,on_after_attack,-1,pet,none,none,powerup,def=1
 10130,on_after_attack,-1,pet,none,none,add_buff,id=31&value=me.pet.status.maxHp*1/4
 10131,on_before_attack,-1,skill,buff,id=31,set_skill,type=critical&op=+&value=35
-10132,on_after_attack,-1,pet,none,none,add_buff,who=op&id=3007
+10132,on_after_attack,-1,pet,none,none,add_buff,who=op&id=3007&value=1
 10133,none,-1,none,none,none,none,none
 10134,on_after_attack,-1,pet,buff,who=op&id=3007,add_buff,who=op&id=1008&value=1
 10135,none,-1,none,none,none,none,none

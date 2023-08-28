@@ -89,4 +89,4 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 900007,on_before_attack,-1,skill,skill,weather=1&whos_turn=op&who=op&type=criticalResult&criticalResult_cmp=1,set_damage,who=op&op=*&value=3/4
 800001,on_before_dmg_cal,-1,pet,skill,type=element&element_cmp=16,set_skill,type=sameElement&op=SET&value=1.5
 800004,on_before_attack,-1,skill,status,who=op&status_type=anger&op=>&cmp_value=50,set_skill,type=power&op=+&value=25
-800007,on_final_dmg_cal,900,skill,skill,type=type&type_cmp=1,set_damage,op=+&value=35
+800007,on_final_dmg_cal,900,skill,skill,type=type&type_cmp=1,set_damage,op=+&value=op.pet.buff[3007].value*35
