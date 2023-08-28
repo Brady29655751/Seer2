@@ -30,7 +30,7 @@ id,name,type,copyType,turn,options,description
 28,暴伤,mark,block,-1,none,暴击时造成的伤害2倍
 29,暴击抵抗,mark,block,-1,none,暴击抵抗增加100%
 30,暴伤抵抗,mark,block,-1,none,免疫暴击伤害
-31,护盾,shield,max,-1,auto_remove=true,当前可以吸收[value]点伤害
+31,护盾,shield,max,-1,none,当前可以吸收[value]点伤害
 99,王者体质,mark,block,-1,none,免疫秒杀效果
 101,魅惑,abnormal,replace,2,none,受到魅惑，无法行动
 104,麻痹,abnormal,replace,5,none,攻击时40%几率被迫中断
