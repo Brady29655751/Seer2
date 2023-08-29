@@ -30,7 +30,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 28,on_after_dmg_cal,-1,skill,skill,whos_turn=op&who=op&type=criticalResult&criticalResult_cmp=1,set_damage,op=*&value=2
 29,on_add_buff\on_remove_buff,-1\-1,pet\pet,none\none,none\none,add_status\add_status,status_type=9&add=100\status_type=9&add=-100
 30,on_final_dmg_cal,1000,skill,skill,whos_turn=op&who=op&type=criticalResult&criticalResult_cmp=1,set_damage,who=op&op=SET&value=0
-31,on_attack\on_attack\on_attack,-100\-1\0,pet\skill\pet,skill\skill\buff,whos_turn=op&who=op&whos_attack=op&type=ignoreShield&ignoreShield_cmp=0\whos_turn=op&who=op&whos_attack=op&type=ignoreShield&ignoreShield_cmp=0\whos_turn=op&whos_attack=op&id=31&type=value&value_op=LTE&value_cmp=0,set_buff\set_damage\remove_buff,id=31&type=value&op=-&value=op.skill.damage\who=op&op=SET&value=-value[MAX]0\id=31
+31,on_attack\on_attack,-100\-1,pet\skill,skill\skill,whos_turn=op&who=op&whos_attack=op&type=ignoreShield&ignoreShield_cmp=0\whos_turn=op&who=op&whos_attack=op&type=ignoreShield&ignoreShield_cmp=0,set_buff\set_damage,id=31&type=value&op=-&value=op.skill.damage\who=op&op=SET&value=-value[MAX]0
 99,none,-1,none,none,none,none,none
 101,none,-1,none,none,none,none,none
 104,on_add_buff\on_turn_ready,-1\-1,pet\pet,none\none,none\none,set_buff\set_buff,id=104&type=value&op=SET&value=random[0~99]\id=104&type=value&op=SET&value=random[0~99]
