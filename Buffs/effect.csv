@@ -49,6 +49,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 3001,on_after_dmg_cal,-1,skill,none,whos_turn=op,set_damage,who=op&op=*&value=3/2
 3002,on_turn_end,100,skill,buff,id=3002&type=turn&turn_cmp=1,set_damage,type=buff&op=+&value=300
 3003,on_final_dmg_cal\on_after_attack\on_after_attack,1000\-1\0,skill\pet\pet,skill\skill\skill,type=type&type_op=>&type_cmp=0\type=type&type_op=>&type_cmp=0\type=type&type_op=>&type_cmp=0,set_damage\heal\remove_buff,op=*&value=1/2\add=-me.skill.damage\id=3003
+3004,on_add_buff\on_remove_buff\on_after_attack,-1\-1\-1,pet\pet\pet,none\none\none,none\none\whos_turn=op,add_status\add_status\remove_buff,type=8&add=100\type=8&add=-100\id=3004
 3005,on_add_buff\on_remove_buff,-1\-1,pet\pet,none\none,none\none,add_status\add_status,type=9&add=25\type=9&add=-25
 3006,on_turn_end,900,pet,none,none,rage,add=10
 3007,on_add_buff\on_remove_buff,-1\-1,pet\pet,none\none,none\none,add_status\add_status,type=7&add=-25\type=7&add=25
@@ -87,6 +88,8 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 900001,on_after_attack,-1,pet,skill,weather=2&type=type&type_op=>&type_cmp=0,rage,add=5
 900004,on_before_attack,-1,skill,none,weather=3,set_skill,type=critical&op=+&value=15
 900007,on_before_attack,-1,skill,skill,weather=1&whos_turn=op&who=op&type=criticalResult&criticalResult_cmp=1,set_damage,who=op&op=*&value=3/4
+900010,on_decide_pri,-1,skill,unit,type=me.pet.status.hp/me.skill.element&type[0].op=<&type[0].cmp=me.pet.status.maxHp*0.25&type[1].cmp=6,set_skill,type=priority&op=+&value=1
 800001,on_before_dmg_cal,-1,pet,skill,type=element&element_cmp=16,set_skill,type=sameElement&op=SET&value=1.5
-800004,on_before_attack,-1,skill,status,who=op&status_type=anger&op=>&cmp_value=50,set_skill,type=power&op=+&value=25
+800004,on_before_attack,-1,skill,status,who=op&status_type=anger&op=>&cmp_value=50,set_skill,type=power&op=+&value=15
 800007,on_final_dmg_cal,900,skill,skill,type=type&type_cmp=1,set_damage,op=+&value=op.pet.buff[3007].value*35
+800010,on_after_attack,-1,skill,unit,random_cmp=50&type=me.pet.status.hp/me.skill.id&type[0].op=<&type[0].cmp=me.pet.status.maxHp*0.25&type[1].cmp=10153,add_buff,id=3004

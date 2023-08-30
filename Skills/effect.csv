@@ -143,3 +143,14 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 10140,on_after_attack,-1,pet,buff,who=op&id=3007,add_buff,who=op&id=1008&value=2
 10141,on_after_attack\on_after_attack,-1\-1,pet\pet,none\none,none\weather=1,powerup\add_buff,def=1&mdf=1\id=3005
 10142,on_after_attack\on_after_attack,-1\-1,pet\pet,none\none,none\weather=1,powerup\rage,mat=1\add=15
+10143,none,-1,none,none,none,none,none
+10144,on_after_attack,-1,pet,none,none,powerup,who=op&atk=-1
+10145,on_final_dmg_cal,-1,skill,last_skill,type=id&id_op=NOT&id_cmp=10145,set_damage,state=last&op=SET&value=me.skill.damage
+10146,on_after_attack,-1,pet,none,none,powerup,who=op&spd=-1
+10147,none,-1,none,none,none,none,none
+10148,on_after_attack,-1,pet,none,none,add_buff,id=3015
+10149,on_final_dmg_cal,900,skill,none,none,set_damage,op=+&value=me.pet.status.hp*1/5
+10150,on_before_attack,-1,skill,none,none,set_skill,type=power&op=+&value=me.pet.status.lostHp/5[MIN]80
+10151,on_after_attack,-1,pet,none,none,add_buff,id=3004
+10152,on_turn_ready,-1,skill,none,none,set_skill,type=id&op=SET&value=random
+10153,on_after_attack,-1,pet,none,none,powerup,atk=1&def=1&mdf=1

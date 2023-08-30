@@ -49,6 +49,7 @@ id,name,type,copyType,turn,options,description
 3001,易伤,mark,block,-1,none,受到的伤害增加50%
 3002,寄生炸弹,turn,replace,3,keep=false,爆炸时损失300点体力（若精灵换场则不保留）
 3003,迷惑,chance,replace,-1,none,使对手下一次造成的伤害减半并且另一半由对手承担
+3004,闪避,chance,block,-1,res=18&keep=false,闪避下一次攻击（若精灵换场则不保留）
 3005,花草护体,mark,block,-1,res=29,暴击抵抗增加25%
 3006,金光绿叶,turn,replace,3,none,每回合回复自身10点怒气
 3007,花粉,mark,block,-1,res=29,暴击率降低25%
@@ -87,6 +88,8 @@ id,name,type,copyType,turn,options,description
 900001,骇浪,feature,block,-1,none,雨天环境下使用攻击技能恢复自身5怒气
 900004,魔焰,feature,block,-1,none,炎热环境下暴击率增加15%
 900007,飞叶,feature,block,-1,none,晴天环境下受到的暴击伤害减少25%
+900010,猛禽,feature,block,-1,none,体力低于1/4时，飞行系技能先制+1
 800001,龙牙,emblem,block,-1,none,使用龙系技能同样适用本系加成
-800004,火拳,emblem,block,-1,none,对手怒气高于50时，自身技能威力增加25
+800004,火拳,emblem,block,-1,none,对手怒气高于50时，自身技能威力增加15
 800007,花舞,emblem,block,-1,none,对手被花粉影响时，自身的物理技能附带35点固定伤害
+800010,红韵,emblem,block,-1,none,体力低于1/4时，使用红韵有50%几率闪避下一次攻击
