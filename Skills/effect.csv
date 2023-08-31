@@ -47,7 +47,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 10044,on_after_attack,-1,pet,none,none,add_buff,who=op&id=1004&turn=3&value=30
 10045,on_after_attack,-1,pet,none,none,add_buff,who=op&id=3020&turn=-1
 10046,on_after_attack,-1,pet,none,none,add_buff,id=3018
-10047,on_after_attack,-1,pet,none,none,heal,who=op&add=-100
+10047,none,-1,none,none,none,none,none
 10048,on_after_attack,-1,pet,none,none,add_buff,who=op&id=3002
 10049,on_after_attack\on_after_attack,-1\0,pet\pet,buff\buff,id=3019\id=3019,set_buff\remove_buff,who=op&id=3002&type=turn&op=SET&value=1\id=3019
 10050,none,-1,none,none,none,none,none

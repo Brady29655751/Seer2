@@ -1,13 +1,13 @@
 <versionData>
     <gameVersion>alpha_0.1</gameVersion>
     <buildVersion>alpha_0.1</buildVersion>
-    <releaseDate>2023-08-20+08:00</releaseDate>
+    <releaseDate>2023-09-01+08:00</releaseDate>
     <releaseNote>
         【当前版本】alpha_0.1
-        【版本日期】2023/08/20
+        【版本日期】2023/09/01
         当前版本为单机测试版本，仅供测试基本功能是否正常。
 
-        【更新精灵】主宠、法伊娜、重甲独角、青蜂
+        【更新精灵】法伊娜、重甲独角、青蜂
         【更新活动】主宠训练营、萨伦帝国入侵日
     </releaseNote>
     <mailData>
@@ -16,7 +16,7 @@
                 <sender>船长辛迪</sender>
                 <title>版本更新奖励</title>
                 <content>当前版本为单机测试版本，仅供测试基本功能是否正常。</content>
-                <date>2023-08-20+08:00</date>
+                <date>2023-09-01+08:00</date>
                 <gift>
                     <item id="10001" num="20"/>
                     <item id="10202" num="20"/>
@@ -28,7 +28,7 @@
             <sender>船长辛迪</sender>
             <title>登入奖励</title>
             <content>登入奖励</content>
-            <date>2023-08-20+08:00</date>
+            <date>2023-09-01+08:00</date>
             <gift>
                 <item id="10201" num="10"/>
                 <item id="1" num="2000"/>
@@ -36,10 +36,10 @@
         </dailyLoginMail>
     </mailData>
     <petData>
-        <petNum>27</petNum>
-        <minPetId>-9</minPetId>
+        <petNum>30</petNum>
+        <minPetId>-12</minPetId>
         <maxPetId>153</maxPetId>
-        <topicPetId>3,6,9,-3,-6,-9,12,148,153</topicPetId>
+        <topicPetId>3,6,9,-3,-6,-9,12,-12,148,153</topicPetId>
     </petData>
     <skillData>
         <skillNum>153</skillNum>
