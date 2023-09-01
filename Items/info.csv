@@ -1,5 +1,5 @@
 id,name,type,price,option,description,effect
-1,飞船币,currency,1,none,none,飞船上流通的货币，可以购买日常用品
+1,赛尔豆,currency,1,none,none,飞船上流通的货币，可以购买日常用品
 2,星钻,currency,1[D],none,none,阿卡迪亚星出产的钻石，非常稀有
 10001,初级精灵胶囊,capture,200,none,none,用来捕获30级以下的精灵
 10002,中级精灵胶囊,capture,400,none,none,用来捕获60级以下的精灵

@@ -92,7 +92,7 @@
 							<action>openHintbox</action>
 							<param>type=Item</param>
 							<param>title=提示</param>
-							<param>content=500 飞船币已经放入背包</param>
+							<param>content=500 赛尔豆已经放入背包</param>
 							<param>item_icon=item[1]</param>
 							<param>option_num=1</param>
 						</button>
@@ -196,7 +196,7 @@
 							<action>openHintbox</action>
 							<param>type=Item</param>
 							<param>title=提示</param>
-							<param>content=1000 飞船币已经放入背包</param>
+							<param>content=1000 赛尔豆已经放入背包</param>
 							<param>item_icon=item[1]</param>
 							<param>option_num=1</param>
 						</button>

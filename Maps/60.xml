@@ -143,7 +143,7 @@
 							<action>openHintbox</action>
 							<param>type=Item</param>
 							<param>title=提示</param>
-							<param>content=1000 飞船币和 50 星钻已经放入背包</param>
+							<param>content=1000 赛尔豆和 50 星钻已经放入背包</param>
 							<param>option_num=1</param>
 							<param>item_icon=item[2]</param>
 						</reply>
