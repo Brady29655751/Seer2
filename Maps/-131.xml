@@ -1,4 +1,4 @@
-<map name="荆棘林" category="2" id="131" weather="1" switch="1">
+<map name="荆棘林" category="2" id="-131" weather="1" switch="-1">
 	<!-- <resource>10013_1</resource> -->
 	<fightMap>100002</fightMap>
 	<initialPoint>480,90</initialPoint>
@@ -68,7 +68,7 @@
 			</eventHandler>
 		</npc>
 		<teleport id="1" name="草系主城" pos="350,60" targetMapId="90"/>
-		<teleport id="2" name="荆棘小道" pos="150,150" targetMapId="132"/>
+		<teleport id="2" name="荆棘小道" pos="150,150" targetMapId="-132"/>
 		<!-- <teleport id="3" name="幻影崖" pos="650,90" targetMapId="141"/> -->
 	</entities>
 </map>
