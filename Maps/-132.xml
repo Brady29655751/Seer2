@@ -35,7 +35,7 @@
 								<hp>2000</hp>
 							</status>
 							<initBuff>13,14,99</initBuff>
-							<loopSkill>10178,10176,10175,10185,10172,10174</loopSkill>
+							<loopSkill>10178,10176,10181,10185,10172,10174</loopSkill>
 						</pet>
 					</enemy>
 					<winHandler>
