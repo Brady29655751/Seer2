@@ -74,7 +74,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 3026,on_after_dmg_cal,-1,skill,skill,type=type&type_cmp=2,set_damage,op=*&value=1/2
 3027,on_final_dmg_cal\on_after_attack,1000\-1,skill\pet,none\none,whos_turn=op\whos_turn=op&whos_attack=op,set_damage\remove_buff,who=op&op=SET&value=0\id=3027
 3028,on_before_attack,-1,skill,none,none,set_skill,type=accuracy&op=+&value=1000
-3029,on_turn_end,100,skill,buff,id=3029&type=turn&turn_cmp=1,heal,type=buff&op=+&value=me.pet.status.maxHp
+3029,on_turn_end,100,pet,buff,id=3029&type=turn&turn_cmp=1,heal,type=buff&op=+&value=me.pet.status.maxHp
 3030,on_turn_end,900,pet,none,none,rage,add=15
 3031,on_turn_end,100,pet,none,none,heal,add=me.pet.status.maxHp*1/16
 3032,on_turn_end,100,pet,none,none,heal,add=me.pet.status.maxHp*1/12

@@ -32,7 +32,7 @@
 					<enemy>
 						<pet id="62" level="60">
 							<status>
-								<hp>5200</hp>
+								<hp>2000</hp>
 							</status>
 							<initBuff>13,14,99</initBuff>
 							<loopSkill>10178,10176,10175,10185,10172,10174</loopSkill>

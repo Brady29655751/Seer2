@@ -74,7 +74,7 @@ id,name,type,copyType,turn,options,description
 3026,无力草,turn,replace,5,none,特殊攻击造成的伤害减半
 3027,吸收草,chance,block,-1,none,吸收对手下次的攻击伤害
 3028,爱的名义,mark,block,-1,none,使自身所有技能必中
-3029,誓言之约,turn,block,6,none,[value]回合后恢复所有体力
+3029,誓言之约,turn,block,6,none,结束时恢复所有体力
 3030,生息,turn,replace,5,res=20,每回合回复15怒气
 3031,静养,turn,replace,5,res=19,每回合回复1/16体力
 3032,永恒之光,turn,replace,3,res=19,每回合回复1/12体力
