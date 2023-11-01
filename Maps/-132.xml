@@ -39,12 +39,12 @@
 						</pet>
 					</enemy>
 					<winHandler>
-						<reply type="branch">
+						<button type="auto">
 							<action>getPet</action>
 							<param>61,10</param>
 							<condition>activity[20001].done=[bool]false[default]false</condition>
-						</reply>
-						<reply type="branch">
+						</button>
+						<button type="auto">
 							<action>openHintbox</action>
 							<param>type=Item</param>
 							<param>title=提示</param>
@@ -52,13 +52,13 @@
 							<param>item_icon=pet[61]</param>
 							<param>option_num=1</param>
 							<condition>activity[20001].done=[bool]false[default]false</condition>
-						</reply>
-						<reply type="branch">
+						</button>
+						<button type="auto">
 							<action>setActivity</action>
 							<param>20001</param>
 							<param>done=true</param>
 							<condition>activity[20001].done=[bool]false[default]false</condition>
-						</reply>
+						</button>
 					</winHandler>
 				</branch>
 			</battle>
