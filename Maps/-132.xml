@@ -1,4 +1,4 @@
-<map name="荆棘小道" category="2" id="-132" switch="-1">
+<map name="荆棘小徑" category="2" id="-132" switch="-1">
 	<!-- <resource>10013_2</resource> -->
 	<fightMap>100002</fightMap>
 	<initialPoint>480,90</initialPoint>
@@ -7,6 +7,68 @@
 		<fx>FX_109</fx>
 	</music>
 	<entities>
+		<npc id="-13201" resId="Pets/62/pet.png" name="拂晓兔" size="41,45" pos="400,140" namePos="5,0">
+			<description>晓晓和月月永不分离！</description>
+			<dialog>
+				<branch id="default" name="拂晓兔" icon="Pets/62/pet.png" size="122,134" pos="0,45">
+					<content><![CDATA[晓晓和月月永不分离！]]></content>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[祝你们幸福！]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+						<reply type="click">
+							<description><![CDATA[让我见证你们爱的力量吧！]]></description>
+							<action>battle</action>
+							<param>default</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<battle>
+				<branch id="default">
+					<settings count="1"/>
+					<enemy>
+						<pet id="62" level="60">
+							<status>
+								<hp>5200</hp>
+							<status>
+							<initBuff>13,14,99</initBuff>
+							<loopSkill>10178,10176,10175,10185,10172,10174</loopSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<reply type="branch">
+							<action>getPet</action>
+							<param>61,10</param>
+							<condition>activity[20001].done=[bool]false[default]false</condition>
+						</reply>
+						<reply type="branch">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=【晓月兔】已经放入精灵仓库</param>
+							<param>item_icon=pet[61]</param>
+							<param>option_num=1</param>
+							<condition>activity[20001].done=[bool]false[default]false</condition>
+						</reply>
+						<reply type="branch">
+							<action>setActivity</action>
+							<param>20001</param>
+							<param>done=true</param>
+							<condition>activity[20001].done=[bool]false[default]false</condition>
+						</reply>
+					</winHandler>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
 		<teleport id="1" name="荆棘林" pos="580,110" targetMapId="-131"/>
 		<!-- <teleport id="2" name="深幽沼泽" pos="260,300" targetMapId="133"/> -->
 	</entities>

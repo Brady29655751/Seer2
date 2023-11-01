@@ -1,4 +1,4 @@
-<map name="荆棘小道" category="2" id="132" switch="1">
+<map name="荆棘小徑" category="2" id="132" switch="1">
 	<!-- <resource>10013_2</resource> -->
 	<fightMap>100002</fightMap>
 	<initialPoint>480,90</initialPoint>
