@@ -1,0 +1,67 @@
+<map name="深幽沼泽" category="2" id="133">
+	<!-- <resource>10013</resource> -->
+	<fightMap>100002</fightMap>
+	<initialPoint>480,90</initialPoint>
+	<music category="2">
+		<bgm>BGM_130</bgm>
+		<fx>FX_109</fx>
+	</music>
+	<entities>
+		<npc id="13301" resId="Pets/200/pet.png" name="Lv8 荧光蝶" size="62,62" pos="320,60" namePos="0,0">
+			<battle>
+				<branch id="default">
+					<settings count="6" capture="true" />
+					<enemy>
+						<pet id="200" level="8">
+							<loopSkill>10187</loopSkill>
+						</pet>
+					</enemy>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>battle</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<npc id="13302" resId="Pets/200/pet.png" name="Lv9 荧光蝶" size="62,62" pos="160,100" namePos="0,0">
+			<battle>
+				<branch id="default">
+					<settings count="6" capture="true" />
+					<enemy>
+						<pet id="200" level="9">
+							<loopSkill>10187</loopSkill>
+						</pet>
+					</enemy>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>battle</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<npc id="13303" resId="Pets/200/pet.png" name="Lv10 荧光蝶" size="62,62" pos="120,260" namePos="0,0">
+			<battle>
+				<branch id="default">
+					<settings count="6" capture="true" />
+					<enemy>
+						<pet id="200" level="10">
+							<loopSkill>10188</loopSkill>
+						</pet>
+					</enemy>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>battle</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<teleport id="1" name="荆棘小徑" pos="550,60" targetMapId="132"/>
+		<!-- <mineport id="2" resId="3" name="红色矿脉" pos="187,309" actorPos="168,382" limit="3" serverConfigId="1"/> -->
+	</entities>
+</map>

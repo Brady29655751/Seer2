@@ -34,6 +34,7 @@ id,name,type,copyType,turn,options,description
 99,王者体质,mark,block,-1,none,免疫秒杀效果
 101,魅惑,abnormal,replace,2,none,受到魅惑，无法行动
 104,麻痹,abnormal,replace,5,none,攻击时40%几率被迫中断
+106,睡眠,abnormal,replace,2,none,无法行动，被攻击会苏醒
 109,冰冻,abnormal,replace,2,none,受到冰冻，无法行动[ENDL]受到暴击伤害提升20%，且受到暴击会解冻
 113,混乱,abnormal,replace,-1,none,下次造成的攻击伤害将转为作用于自身
 1000,溺水,unhealthy,replace,3,none,每回合损失1/8体力，且命中率降低10%（对水系无效）
@@ -78,6 +79,8 @@ id,name,type,copyType,turn,options,description
 3030,生息,turn,replace,5,res=20,每回合回复15怒气
 3031,静养,turn,replace,5,res=19,每回合回复1/16体力
 3032,永恒之光,turn,replace,3,res=19,每回合回复1/12体力
+3033,荧光花粉,mark,block,-1,res=21,命中下降15%
+3034,花粉弥漫,mark,block,-1,max_val=3,每一层使自身受到伤害减少15%。受到攻击时增加1层，最多叠加3层。[ENDL]当前为[value]层
 3143,焦点腐蚀,mark,block,-1,none,特定攻击技能造成伤害的1/4将恢复自身体力
 3279,蜂纹,mark,stack,-1,auto_remove=true&max_val=3,每一层使中毒造成的伤害增加30，最多叠加3层。[ENDL]当前为[value]层
 3280,青蜂之舞,turn,replace,3,res=18,闪避率增加50%
@@ -89,6 +92,7 @@ id,name,type,copyType,turn,options,description
 100061,有爱,feature,block,-1,none,以爱的名义伤害增加10%
 100146,腐蚀,feature,block,-1,none,自身具有焦点腐蚀时，技能威力增加10
 100151,青蜂,feature,block,-1,none,攻击技能命中处于中毒状态的对手会重置中毒状态为3回合
+100200,毒粉,feature,block,-1,none,自身具有花粉弥漫时，每回合使对手失去25点体力
 200001,追击,emblem,block,-1,none,命中率和闪避率提高10%
 200004,怒火,emblem,block,-1,none,怒气回复率提高20%（攻击命中与回合结束回复的怒气除外）
 200007,治愈,emblem,block,-1,none,体力回复率提高20%
@@ -97,6 +101,7 @@ id,name,type,copyType,turn,options,description
 200061,爱的,emblem,block,-1,none,出场时自带爱的名义
 200146,吸取,emblem,block,-1,none,攻击技能未命中时吸取对手10怒气
 200151,蜂纹,emblem,block,-1,none,对手具有蜂纹时，自身攻击技能造成伤害的1/10会恢复自身的体力
+200200,荧光,emblem,block,-1,none,对手具有荧光花粉时，每回合恢复自身25点体力
 900001,骇浪,feature,block,-1,none,雨天环境下使用攻击技能恢复自身5怒气
 900004,魔焰,feature,block,-1,none,炎热环境下暴击率增加15%
 900007,飞叶,feature,block,-1,none,晴天环境下受到的暴击伤害减少25%
