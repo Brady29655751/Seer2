@@ -63,13 +63,13 @@ id,name,type,copyType,turn,options,description
 3014,佯攻,chance,replace,-1,none,下一次技能威力+50[ENDL]（佯攻除外）
 3015,必中,chance,replace,-1,res=17,下一次技能必中
 3016,炎之意志,chance,block,-1,none,下一次技能伤害增加100%
-3017,不灭之心,chance,block,-1,none,下一次受到致死攻击时，保留1点体力
+3017,不屈,chance,block,-1,none,下一次受到致死攻击时，保留1点体力
 3018,拉奥呼唤,turn,replace,3,res=19,每回合回复自身13%体力
 3019,种子,mark,replace,-1,auto_remove=true,自身受到攻击伤害时，消耗1个种子以减少20%受到的伤害[ENDL]当前为[value]个
 3020,命中低下,mark,block,-1,res=21,命中下降15%
 3021,命中提升,mark,block,-1,res=22,命中上升25%
 3022,强化状态,turn,replace,5,none,使自身技能威力+50
-3023,闪避,turn,replace,2,res=18,闪避率增加100%
+3023,闪避,turn,replace,1,res=18,闪避率增加100%
 3024,幻觉,turn,replace,5,none,幻觉状态下属性技能朝四面八方释放覆盖全场，使自身属性技能必中
 3025,葵花种子,mark,block,-1,none,使造成的伤害降低15%
 3026,无力草,turn,replace,5,none,特殊攻击造成的伤害减半
@@ -81,6 +81,8 @@ id,name,type,copyType,turn,options,description
 3032,永恒之光,turn,replace,3,res=19,每回合回复1/12体力
 3033,荧光花粉,mark,block,-1,res=21,命中下降15%
 3034,花粉弥漫,mark,block,-1,max_val=3,每一层使自身受到伤害减少15%。受到攻击时增加1层，最多叠加3层。[ENDL]当前为[value]层
+3035,永恒极光,turn,block,3,none,击败对手则恢复200点体力
+3036,致胜约束,turn,replace,3,none,使自己的怒气不低于20
 3143,焦点腐蚀,mark,block,-1,none,特定攻击技能造成伤害的1/4将恢复自身体力
 3279,蜂纹,mark,stack,-1,auto_remove=true&max_val=3,每一层使中毒造成的伤害增加30，最多叠加3层。[ENDL]当前为[value]层
 3280,青蜂之舞,turn,replace,3,res=18,闪避率增加50%

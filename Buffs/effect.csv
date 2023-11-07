@@ -63,7 +63,7 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 3014,on_before_attack\on_after_attack,900\-1,skill\pet,skill\skill,type=id/type&id_op=NOT&id_cmp=10024&type_op=>&type_cmp=0\type=id/type&id_op=NOT&id_cmp=10024&type_op=>&type_cmp=0,set_skill\remove_buff,type=power&op=+&value=50\id=3014
 3015,on_before_attack\on_after_attack,-1\-1,skill\pet,none\none,none\none,set_skill\remove_buff,type=accuracy&op=+&value=1000\id=3015
 3016,on_after_dmg_cal\on_after_attack,-1\-1,skill\pet,none\none,none\none,set_damage\remove_buff,op=*&value=2\id=3016
-3017,on_after_attack\on_remove_buff,-1000\-1,pet\pet,status\none,whos_turn=op&status_type=hp&cmp_value=0\whos_turn=op,remove_buff\heal,id=3017\set=1
+3017,on_after_attack\on_after_attack,-1000\-1,pet\pet,status\status,whos_turn=op&status_type=hp&cmp_value=0\whos_turn=op&status_type=hp&cmp_value=0,heal\remove_buff,set=1\id=3017
 3018,on_turn_end,100,pet,none,none,heal,type=buff&add=me.pet.status.maxHp*13/100
 3019,on_after_dmg_cal\on_after_dmg_cal,-1\-1,skill\pet,none\buff,whos_turn=op\whos_turn=op&id=3019,set_damage\set_buff,who=op&op=*&value=4/5\id=3019&type=value&op=-&value=1
 3020,on_add_buff\on_remove_buff,-1\-1,pet\pet,none\none,none\none,add_status\add_status,type=6&add=-15\type=6&add=15
@@ -81,6 +81,8 @@ id,timing,priority,target,condition,cond_option,effect,effect_option
 3032,on_turn_end,100,pet,none,none,heal,type=buff&add=me.pet.status.maxHp*1/12
 3033,on_add_buff\on_remove_buff,-1\-1,pet\pet,none\none,none\none,add_status\add_status,type=6&add=-15\type=6&add=15
 3034,on_after_attack\on_after_attack,-1\-1,skill\pet,skill\skill,whos_turn=op&who=op&type=type&type_op=>&type_cmp=0\whos_turn=op&who=op&type=type&type_op=>&type_cmp=0,set_damage\set_buff,who=op&op=*&value=-0.15*value+1\id=3034&type=value&op=+&value=1
+3035,on_after_attack\on_after_attack,-1000\-1,pet\pet,pet\pet,who=op&type=dead&dead_cmp=1\who=op&type=dead&dead_cmp=1,heal\remove_buff,add=200\id=3035
+3036,on_add_buff\on_remove_buff,-1\-1,pet\pet,none\none,none\none,rage\rage,min=20\min=0
 3143,none,-1,none,none,none,none,none
 3279,on_turn_end,100,pet,buff,id=1003,set_damage,type=buff&op=+&value=30*value
 3280,on_add_buff\on_remove_buff,-1\-1,pet\pet,none\none,none\none,add_status\add_status,type=8&add=50\type=8&add=-50
