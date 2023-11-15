@@ -56,6 +56,7 @@
 			</eventHandler>
 		</npc>
 		-->
+		<!--
 		<npc id="8103" resId="8103" name="" size="198,180" pos="380,273" namePos="0,0">
 			<description>PVP对战</description>
 			<eventHandler>
@@ -65,6 +66,7 @@
 				</button>
 			</eventHandler>
 		</npc>
+		-->
 		<teleport id="1" name="传送室" pos="300,250" targetMapId="70"/>
 	</entities>		
 </map>
