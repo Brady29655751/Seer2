@@ -1,6 +1,6 @@
 <map name="英格瓦要塞" category="100" id="81" weather="0">
 	<!-- <resource>3831</resource> -->
-	<fightMap>100010</fightMap>
+	<fightMap>100011</fightMap>
 	<initialPoint>650,110</initialPoint>
 	<music category="100">
 		<bgm>BGM_113</bgm>
@@ -16,6 +16,11 @@
 							<description><![CDATA[好的]]></description>
 							<action>openDialog</action>
 							<param>null</param>
+						</reply>
+						<reply type="click">
+							<description><![CDATA[我想参与PVP对战！]]></description>
+							<action>openPanel</action>
+							<param>CreateRoom</param>
 						</reply>
 					</replyHandler>
 				</branch>
@@ -51,6 +56,15 @@
 			</eventHandler>
 		</npc>
 		-->
+		<npc id="8103" resId="8103" name="" size="198,180" pos="380,273" namePos="0,0">
+			<description>PVP对战</description>
+			<eventHandler>
+				<button type="click">
+					<action>openPanel</action>
+					<param>CreateRoom</param>
+				</button>
+			</eventHandler>
+		</npc>
 		<teleport id="1" name="传送室" pos="300,250" targetMapId="70"/>
 	</entities>		
 </map>
