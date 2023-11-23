@@ -8,6 +8,6 @@
 	</music>
 	<entities>
 		<teleport id="1" name="荆棘林" pos="580,110" targetMapId="131"/>
-		<!-- <teleport id="2" name="深幽沼泽" pos="260,300" targetMapId="133"/> -->
+		<teleport id="2" name="深幽沼泽" pos="260,300" targetMapId="133"/>
 	</entities>
 </map>
