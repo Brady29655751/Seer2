@@ -1,24 +1,25 @@
 <versionData>
-    <gameVersion>alpha_0.2</gameVersion>
-    <buildVersion>alpha_0.2</buildVersion>
-    <releaseDate>2023-11-01+08:00</releaseDate>
+    <gameVersion>beta_0.1</gameVersion>
+    <buildVersion>beta_0.1</buildVersion>
+    <releaseDate>2023-11-24+08:00</releaseDate>
     <releaseNote>
-        【当前版本】alpha_0.2
-        【版本日期】2023/11/01
-        当前版本为单机测试版本，仅供测试基本功能是否正常。
+        【当前版本】beta_0.1
+        【版本日期】2023/11/24
+        当前版本为测试版本，流量抵达上限后即无法进行PVP对战（单机功能仍可正常使用）
 
-        【更新精灵】拂晓兔、笑笑葵
-        【更新活动】拂晓时刻
-        【更新地图】荆棘林、荆棘小徑
-        【更新功能】精灵背包中点击锻炼可以一键极品
+        【更新精灵】幻彩蝶、极影兔
+        【更新活动】PVP对战（请前往英格瓦要塞寻找上尉门罗）
+        【更新地图】深幽沼泽
+        【更新功能】精灵皮肤系统、学习力一键提升
+        【已知错误】对战中有概率因为卡顿而使精灵动画无法播放，进而导致对战卡死
     </releaseNote>
     <mailData>
         <updateMail>
             <mail>
                 <sender>船长辛迪</sender>
                 <title>版本更新奖励</title>
-                <content>当前版本为单机测试版本，仅供测试基本功能是否正常。</content>
-                <date>2023-11-01+08:00</date>
+                <content>当前版本为测试版本，流量抵达上限后即无法进行PVP对战（单机功能仍可正常使用）</content>
+                <date>2023-11-24+08:00</date>
                 <gift>
                     <item id="10016" num="20"/>
                     <item id="10225" num="5"/>
@@ -30,23 +31,23 @@
             <sender>船长辛迪</sender>
             <title>登入奖励</title>
             <content>登入奖励</content>
-            <date>2023-11-01+08:00</date>
+            <date>2023-11-24+08:00</date>
             <gift>
-                <item id="10238" num="1"/>
+                <item id="10016" num="5"/>
                 <item id="1" num="2000"/>
             </gift>
         </dailyLoginMail>
     </mailData>
     <petData>
-        <petNum>35</petNum>
+        <petNum>38</petNum>
         <minPetId>-12</minPetId>
-        <maxPetId>153</maxPetId>
-        <topicPetId>15,62</topicPetId>
+        <maxPetId>685</maxPetId>
+        <topicPetId>201,685</topicPetId>
     </petData>
     <skillData>
-        <skillNum>186</skillNum>
+        <skillNum>206</skillNum>
         <minSkillId>10001</minSkillId>
-        <maxSkillId>10186</maxSkillId>
+        <maxSkillId>10206</maxSkillId>
     </skillData>
     <missionData>
         <mainCount>1</mainCount>
