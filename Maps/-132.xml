@@ -105,8 +105,8 @@
 					<enemy>
 						<pet id="685" level="100">
 							<status>
-								<mat>600</mat>
-								<hp>2000</hp>
+								<mat>700</mat>
+								<hp>3000</hp>
 							</status>
 							<initBuff>13,14,99</initBuff>
 							<loopSkill>10178,10202,10202,10202,10202</loopSkill>
