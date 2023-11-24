@@ -7,13 +7,13 @@
 		<fx>FX_109</fx>
 	</music>
 	<entities>
-		<npc id="13301" resId="Pets/200/pet.png" name="Lv8 荧光蝶" size="62,62" pos="320,60" namePos="0,0">
+		<npc id="13301" resId="Pets/200/pet.png" name="Lv10 荧光蝶" size="62,62" pos="320,60" namePos="0,0">
 			<battle>
 				<branch id="default">
 					<settings count="6" capture="true" />
 					<enemy>
 						<pet id="200" level="8">
-							<loopSkill>10187</loopSkill>
+							<loopSkill>10188</loopSkill>
 						</pet>
 					</enemy>
 				</branch>
@@ -25,13 +25,13 @@
 				</button>
 			</eventHandler>
 		</npc>
-		<npc id="13302" resId="Pets/200/pet.png" name="Lv9 荧光蝶" size="62,62" pos="160,100" namePos="0,0">
+		<npc id="13302" resId="Pets/200/pet.png" name="Lv11 荧光蝶" size="62,62" pos="160,100" namePos="0,0">
 			<battle>
 				<branch id="default">
 					<settings count="6" capture="true" />
 					<enemy>
 						<pet id="200" level="9">
-							<loopSkill>10187</loopSkill>
+							<loopSkill>10188</loopSkill>
 						</pet>
 					</enemy>
 				</branch>
@@ -43,7 +43,7 @@
 				</button>
 			</eventHandler>
 		</npc>
-		<npc id="13303" resId="Pets/200/pet.png" name="Lv10 荧光蝶" size="62,62" pos="120,260" namePos="0,0">
+		<npc id="13303" resId="Pets/200/pet.png" name="Lv12 荧光蝶" size="62,62" pos="120,260" namePos="0,0">
 			<battle>
 				<branch id="default">
 					<settings count="6" capture="true" />
