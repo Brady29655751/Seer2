@@ -14,6 +14,6 @@
 		<teleport id="2" name="权力之帐" pos="500,130" targetMapId="110"/>
 		<teleport id="3" name="异蘑世界" pos="600,50" targetMapId="121"/>
 		<teleport id="4" name="信奉广场" pos="30,140" targetMapId="100"/>
-		<!-- <teleport id="5" name="七味小厨" pos="250,240" targetMapId="125"/> -->
+		<teleport id="5" name="七味小厨" pos="250,240" targetMapId="125"/>
 	</entities>
 </map>

@@ -4,7 +4,7 @@
 	<initialPoint>480,90</initialPoint>
 	<music category="2">
 		<bgm>BGM_130</bgm>
-		<fx>FX_109</fx>
+		<fx>FX_114</fx>
 	</music>
 	<entities>
 		<npc id="13301" resId="Pets/200/pet.png" name="Lv10 荧光蝶" size="62,62" pos="320,60" namePos="0,0">

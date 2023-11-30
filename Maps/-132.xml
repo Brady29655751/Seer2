@@ -12,34 +12,54 @@
 			<dialog>
 				<branch id="default" name="拂晓兔" icon="Pets/62/pet.png" size="122,134" pos="0,45">
 					<content><![CDATA[晓晓和月月永不分离！]]></content>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[普通挑战]]></description>
+							<action>battle</action>
+							<param>default</param>
+						</func>
+						<func type="click">
+							<description><![CDATA[极影特训]]></description>
+							<action>battle</action>
+							<param>shadow</param>
+							<condition>firstPet.id=62</condition>
+							<condition>firstPet.levelGTE60</condition>
+						</func>
+						<func type="branch">
+							<action>openDialog</action>
+							<param>shadow_wrong_pet</param>
+							<condition>firstPet.idNOT62</condition>
+						</func>
+						<func type="branch">
+							<action>openDialog</action>
+							<param>shadow_level_60</param>
+							<condition>firstPet.id=62</condition>
+							<condition>firstPet.levelLTE59</condition>
+						</func>
+						<func type="click">
+							<description><![CDATA[神迹觉醒]]></description>
+							<action>battle</action>
+							<param>miracle</param>
+							<condition>firstPet.id=685</condition>
+							<condition>firstPet.level=100</condition>
+						</func>
+						<func type="branch">
+							<action>openDialog</action>
+							<param>miracle_wrong_pet</param>
+							<condition>firstPet.idNOT685</condition>
+						</func>
+						<func type="branch">
+							<action>openDialog</action>
+							<param>miracle_level_100</param>
+							<condition>firstPet.id=685</condition>
+							<condition>firstPet.levelLTE99</condition>
+						</func>
+					</functionHandler>
 					<replyHandler>
 						<reply type="click">
 							<description><![CDATA[祝你们幸福！]]></description>
 							<action>openDialog</action>
 							<param>null</param>
-						</reply>
-						<reply type="click">
-							<description><![CDATA[极影特训！]]></description>
-							<action>battle</action>
-							<param>shadow</param>
-							<condition>firstPet.id=62</condition>
-							<condition>firstPet.levelGTE60</condition>
-						</reply>
-						<reply type="branch">
-							<action>openDialog</action>
-							<param>shadow_wrong_pet</param>
-							<condition>firstPet.idNOT62</condition>
-						</reply>
-						<reply type="branch">
-							<action>openDialog</action>
-							<param>shadow_level_60</param>
-							<condition>firstPet.id=62</condition>
-							<condition>firstPet.levelLTE59</condition>
-						</reply>
-						<reply type="click">
-							<description><![CDATA[普通挑战！]]></description>
-							<action>battle</action>
-							<param>default</param>
 						</reply>
 					</replyHandler>
 				</branch>
@@ -55,6 +75,26 @@
 				</branch>
 				<branch id="shadow_level_60" name="拂晓兔" icon="Pets/62/pet.png" size="122,134" pos="0,45">
 					<content><![CDATA[你还没领悟爱的力量，等级达到60级以上再来挑战吧！]]></content>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[我等等再来]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+				<branch id="miracle_wrong_pet" name="拂晓兔" icon="Pets/62/pet.png" size="122,134" pos="0,45">
+					<content><![CDATA[只有通过极影特训激发爱的力量才能引发神迹，快把极影兔设为首发吧！]]></content>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[我等等再来]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+				<branch id="miracle_level_100" name="拂晓兔" icon="Pets/62/pet.png" size="122,134" pos="0,45">
+					<content><![CDATA[你需要继续累积爱的力量，等级达到100级再来挑战吧！]]></content>
 					<replyHandler>
 						<reply type="click">
 							<description><![CDATA[我等等再来]]></description>
@@ -106,7 +146,7 @@
 						<pet id="685" level="100">
 							<status>
 								<mat>700</mat>
-								<hp>3000</hp>
+								<hp>2000</hp>
 							</status>
 							<initBuff>13,14,99</initBuff>
 							<loopSkill>10178,10202,10202,10202,10202</loopSkill>
@@ -123,6 +163,32 @@
 							<param>title=提示</param>
 							<param>content=拂晓兔已成功通过极影特训</param>
 							<param>item_icon=pet[685]</param>
+							<param>option_num=1</param>
+						</button>
+					</winHandler>
+				</branch>
+				<branch id="miracle">
+					<settings count="1" item="false"/>
+					<enemy>
+						<pet id="946" level="105">
+							<status>
+								<hp>2000</hp>
+							</status>
+							<initBuff>13,14,23,27,99</initBuff>
+							<loopSkill>10208,10207,10206</loopSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>evolvePet</action>
+							<param>946</param>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=拂晓兔已成功神迹觉醒</param>
+							<param>item_icon=pet[946]</param>
 							<param>option_num=1</param>
 						</button>
 					</winHandler>

@@ -14,6 +14,8 @@ id,baseId,skinChoice,options
 13,13,none,none
 14,13,none,none
 15,13,none,none
+20,20,none,none
+21,20,none,none
 61,61,none,none
 62,61,none,none
 146,146,none,none
@@ -24,6 +26,7 @@ id,baseId,skinChoice,options
 153,151,none,none
 200,200,none,none
 201,200,none,none
+301,301,none,none
 685,61,none,default_skin=62
 946,61,none,none
 -1,-1,none,none
