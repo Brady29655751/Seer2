@@ -7,25 +7,7 @@
     	<fx>FX_117</fx>
     </music>
 	<entities>
-        <!--
-		<npc id="19" resId="19" name="维拉" dir="0" width="70" height="125" pos="374,277" actorPos="352,302" path="">
-			<dialog npcId="19" transport="1,300,400">
-				<branch id="default">
-					<node emotion="0"><![CDATA[维尔家族世世代代都会为草目氏族做出最香甜的美酒！]]></node>
-					<reply action="close"><![CDATA[哇哦！听起来就很不错呢！]]></reply>
-				</branch>
-			</dialog>
-			<eventHandler>
-				<mouseOver>
-					<HandlerShowNpcSlogan><![CDATA[只有想不通的人，没有走不通的路。]]></HandlerShowNpcSlogan>
-				</mouseOver>
-				<click>
-					<HandlerOpenDialogPanel/>
-				</click>
-			</eventHandler>
-		</npc>
-        -->
-		<npc id="15101" resId="Pets/20/pet.png" name="Lv13 奇鲁" size="48,54" pos="145,180" namePos="0,0">
+		<npc id="15101" resId="Pets/pet/20.png" name="Lv13 奇鲁" size="48,54" pos="145,180" namePos="0,0">
 			<battle>
 				<branch id="default">
 					<settings count="6" capture="true">
@@ -45,7 +27,7 @@
 				</button>
 			</eventHandler>
 		</npc>
-		<npc id="15102" resId="Pets/20/pet.png" name="Lv14 奇鲁" size="48,54" pos="270,240" namePos="0,0">
+		<npc id="15102" resId="Pets/pet/20.png" name="Lv14 奇鲁" size="48,54" pos="270,240" namePos="0,0">
 			<battle>
 				<branch id="default">
 					<settings count="6" capture="true">
@@ -65,7 +47,7 @@
 				</button>
 			</eventHandler>
 		</npc>
-		<npc id="15103" resId="Pets/20/pet.png" name="Lv15 奇鲁" size="48,54" pos="350,190" namePos="0,0">
+		<npc id="15103" resId="Pets/pet/20.png" name="Lv15 奇鲁" size="48,54" pos="350,190" namePos="0,0">
 			<battle>
 				<branch id="default">
 					<settings count="6" capture="true">
@@ -85,8 +67,29 @@
 				</button>
 			</eventHandler>
 		</npc>
-		<!-- <teleport id="1" name="水仙溪口" pos="540,50" targetMapId="152"/> -->
+		<npc id="15104" resId="15104" name="维拉" size="70,104" pos="480,140">
+			<description>只有想不通的人，没有走不通的路。</description>
+			<dialog>
+				<branch id="default" name="维拉" icon="15104" size="70,104" pos="0,55">
+					<content><![CDATA[维尔家族世世代代都会为草目氏族做出最香甜的美酒！]]></content>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[哇哦！听起来就很不错呢！]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<teleport id="1" name="水仙溪口" pos="540,50" targetMapId="152"/>
 		<teleport id="2" name="信奉广场" pos="400,245" targetMapId="100"/>
-		<!-- <teleport id="3" name="狂暴漩涡" pos="160,300" targetMapId="213"/> -->
+		<teleport id="3" name="狂暴漩涡" pos="160,300" targetMapId="213"/>
 	</entities>
 </map>

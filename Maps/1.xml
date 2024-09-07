@@ -1,0 +1,421 @@
+<map name="观星台" category="1" id="1" weather="12">
+	<!-- <resource>10008</resource> -->
+	<fightMap>100011</fightMap>
+	<initialPoint>800,130</initialPoint>
+	<music category="100">
+		<bgm>MU_083</bgm>
+	</music>
+	<entities>
+		<npc id="101" resId="Pets/pet/961.png" name="Lv 105 星之首影" size="135,137" pos="350,360" namePos="0,-20">
+			<description><![CDATA[星之首影]]></description>
+			<dialog>
+				<branch id="default" name="星之首影" icon="Pets/pet/961.png" size="135,137" pos="10,35">
+					<content><![CDATA[万物起于星空，终于星空。大地为万物之源，星空为大地之源。星之首影，象征着源泉。]]></content>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[普通挑战]]></description>
+							<action>battle</action>
+							<param>default</param>
+						</func>
+					</functionHandler>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[好神秘阿]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<battle>
+				<branch id="default">
+					<settings count="6">
+						<mode>4</mode>
+						<weather>12</weather>
+					</settings>
+					<enemy>
+						<pet id="961" level="105">
+							<status>
+								<atk>500</atk>
+								<mat>500</mat>
+								<hp>10000</hp>
+							</status>
+							<initBuff>12,13,14,17,20,23,99,-3003,-3004</initBuff>
+							<loopSkill>10312,10315,10315</loopSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>getPet</action>
+							<param>961,100</param>
+							<condition>activity[20003].done[1]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=【星之首影】已经放入精灵仓库</param>
+							<param>item_icon=pet[961]</param>
+							<param>option_num=1</param>
+							<condition>activity[20003].done[1]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>setActivity</action>
+							<param>20003</param>
+							<param>done[1]=true</param>
+							<condition>activity[20003].done[1]=[bool]false[default]false</condition>
+						</button>
+					</winHandler>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<npc id="102" resId="Pets/pet/962.png" name="Lv 105 星之躯影" size="175,137" pos="555,340" namePos="0,-20">
+			<description><![CDATA[星之躯影]]></description>
+			<dialog>
+				<branch id="default" name="星之躯影" icon="Pets/pet/962.png" size="175,137" pos="10,35">
+					<content><![CDATA[万物起于星空，终于星空。大地滋养万物，星空庇护万物。星之躯影，象征着庇护。]]></content>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[普通挑战]]></description>
+							<action>battle</action>
+							<param>default</param>
+						</func>
+					</functionHandler>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[好神秘阿]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<battle>
+				<branch id="default">
+					<settings count="6">
+						<mode>4</mode>
+						<weather>12</weather>
+					</settings>
+					<enemy>
+						<pet id="962" level="105">
+							<status>
+								<hp>15000</hp>
+							</status>
+							<initBuff>12,13,14,17,20,23,99,-3006</initBuff>
+							<headerSkill>10345</headerSkill>
+							<loopSkill>10347</loopSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>getPet</action>
+							<param>962,100</param>
+							<condition>activity[20003].done[2]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=【星之躯影】已经放入精灵仓库</param>
+							<param>item_icon=pet[962]</param>
+							<param>option_num=1</param>
+							<condition>activity[20003].done[2]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>setActivity</action>
+							<param>20003</param>
+							<param>done[2]=true</param>
+							<condition>activity[20003].done[2]=[bool]false[default]false</condition>
+						</button>
+					</winHandler>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<npc id="103" resId="Pets/pet/963.png" name="Lv 105 星之臂影" size="101,79" pos="595,240" namePos="0,-20">
+			<description><![CDATA[星之臂影]]></description>
+			<dialog>
+				<branch id="default" name="星之臂影" icon="Pets/pet/963.png" size="152,119" pos="0,35">
+					<content><![CDATA[万物起于星空，终于星空。大地束缚万物，星空掌控万物。星之臂影，象征着掌控。]]></content>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[普通挑战]]></description>
+							<action>battle</action>
+							<param>default</param>
+						</func>
+					</functionHandler>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[好神秘阿]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<battle>
+				<branch id="default">
+					<settings count="6">
+						<mode>4</mode>
+						<weather>12</weather>
+					</settings>
+					<enemy>
+						<pet id="963" level="105">
+							<status>
+								<hp>20000</hp>
+							</status>
+							<initBuff>12,13,14,17,20,99</initBuff>
+							<headerSkill>10365</headerSkill>
+							<loopSkill>10366</loopSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>getPet</action>
+							<param>963,100</param>
+							<condition>activity[20003].done[3]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=【星之臂影】已经放入精灵仓库</param>
+							<param>item_icon=pet[963]</param>
+							<param>option_num=1</param>
+							<condition>activity[20003].done[3]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>setActivity</action>
+							<param>20003</param>
+							<param>done[3]=true</param>
+							<condition>activity[20003].done[3]=[bool]false[default]false</condition>
+						</button>
+					</winHandler>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<npc id="104" resId="Pets/pet/964.png" name="Lv 105 星之足影" size="174,100" pos="312,175" namePos="0,-20">
+			<description><![CDATA[星之足影]]></description>
+			<dialog>
+				<branch id="default" name="星之足影" icon="Pets/pet/964.png" size="174,100" pos="0,55">
+					<content><![CDATA[万物起于星空，终于星空。大地摧毁万物，星空蹂躏万物。星之足影，象征着蹂躏。]]></content>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[普通挑战]]></description>
+							<action>battle</action>
+							<param>default</param>
+						</func>
+					</functionHandler>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[好神秘阿]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<battle>
+				<branch id="default">
+					<settings count="6">
+						<mode>4</mode>
+						<weather>12</weather>
+					</settings>
+					<enemy>
+						<pet id="964" level="105">
+							<status>
+								<atk>600</atk>
+								<mat>600</mat>
+								<hp>25000</hp>
+							</status>
+							<initBuff>13,14,17,20,99</initBuff>
+							<loopSkill>10370,10372</loopSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>getPet</action>
+							<param>964,100</param>
+							<condition>activity[20003].done[4]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=【星之足影】已经放入精灵仓库</param>
+							<param>item_icon=pet[964]</param>
+							<param>option_num=1</param>
+							<condition>activity[20003].done[4]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>setActivity</action>
+							<param>20003</param>
+							<param>done[4]=true</param>
+							<condition>activity[20003].done[4]=[bool]false[default]false</condition>
+						</button>
+					</winHandler>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<npc id="105" resId="Pets/pet/965.png" name="Lv 105 星之背影" size="102,92" pos="110,220" namePos="0,-10">
+			<description><![CDATA[星之背影]]></description>
+			<dialog>
+				<branch id="default" name="星之背影" icon="Pets/pet/965.png" size="137,115" pos="0,55">
+					<content><![CDATA[万物起于星空，终于星空。大地吸收万物，星空吞噬万物。星之背影，象征着吞噬。]]></content>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[普通挑战]]></description>
+							<action>battle</action>
+							<param>default</param>
+						</func>
+					</functionHandler>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[好神秘阿]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<battle>
+				<branch id="default">
+					<settings count="6">
+						<mode>4</mode>
+						<weather>12</weather>
+					</settings>
+					<enemy>
+						<pet id="965" level="105">
+							<status>
+								<atk>500</atk>
+								<mat>500</mat>
+								<hp>30000</hp>
+							</status>
+							<initBuff>13,14,17,20,98,99</initBuff>
+							<loopSkill>10396,10397,10398</loopSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>getPet</action>
+							<param>965,100</param>
+							<condition>activity[20003].done[5]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=【星之背影】已经放入精灵仓库</param>
+							<param>item_icon=pet[965]</param>
+							<param>option_num=1</param>
+							<condition>activity[20003].done[5]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>setActivity</action>
+							<param>20003</param>
+							<param>done[5]=true</param>
+							<condition>activity[20003].done[5]=[bool]false[default]false</condition>
+						</button>
+					</winHandler>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<npc id="106" resId="Pets/pet/966.png" name="Lv 105 星之心影" size="100,120" pos="130,325" namePos="0,-10">
+			<description><![CDATA[星之心影]]></description>
+			<dialog>
+				<branch id="default" name="星之心影" icon="Pets/pet/966.png" size="100,120" pos="10,55">
+					<content><![CDATA[万物起于星空，终于星空。大地为万物之末，星空为大地之末。星之心影，象征着终末。]]></content>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[普通挑战]]></description>
+							<action>battle</action>
+							<param>default</param>
+						</func>
+					</functionHandler>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[好神秘阿]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<battle>
+				<branch id="default">
+					<settings count="6">
+						<mode>4</mode>
+						<weather>12</weather>
+					</settings>
+					<enemy>
+						<pet id="966" level="105">
+							<status>
+								<hp>35000</hp>
+							</status>
+							<initBuff>13,14,17,20,25,26,98,99</initBuff>
+							<loopSkill>10433,10434,10434,10434,10434</loopSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>getPet</action>
+							<param>966,100</param>
+							<condition>activity[20003].done[6]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=【星之心影】已经放入精灵仓库</param>
+							<param>item_icon=pet[966]</param>
+							<param>option_num=1</param>
+							<condition>activity[20003].done[6]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>setActivity</action>
+							<param>20003</param>
+							<param>done[6]=true</param>
+							<condition>activity[20003].done[6]=[bool]false[default]false</condition>
+						</button>
+					</winHandler>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<teleport id="1" name="传送室" pos="720,60" targetMapId="70"/>
+	</entities>
+</map>

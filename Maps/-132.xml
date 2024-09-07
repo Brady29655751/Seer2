@@ -7,10 +7,10 @@
 		<fx>FX_109</fx>
 	</music>
 	<entities>
-		<npc id="-13201" resId="Pets/62/pet.png" name="拂晓兔" size="41,45" pos="400,140" namePos="5,0">
+		<npc id="-13201" resId="Pets/pet/62.png" name="拂晓兔" size="41,45" pos="400,140" namePos="5,0">
 			<description>晓晓和月月永不分离！</description>
 			<dialog>
-				<branch id="default" name="拂晓兔" icon="Pets/62/pet.png" size="122,134" pos="0,45">
+				<branch id="default" name="拂晓兔" icon="Pets/pet/62.png" size="122,134" pos="0,45">
 					<content><![CDATA[晓晓和月月永不分离！]]></content>
 					<functionHandler>
 						<func type="click">
@@ -63,7 +63,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="shadow_wrong_pet" name="拂晓兔" icon="Pets/62/pet.png" size="122,134" pos="0,45">
+				<branch id="shadow_wrong_pet" name="拂晓兔" icon="Pets/pet/62.png" size="122,134" pos="0,45">
 					<content><![CDATA[只有拂晓兔才能领悟爱的奥义，快把拂晓兔设为首发吧！]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -73,7 +73,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="shadow_level_60" name="拂晓兔" icon="Pets/62/pet.png" size="122,134" pos="0,45">
+				<branch id="shadow_level_60" name="拂晓兔" icon="Pets/pet/62.png" size="122,134" pos="0,45">
 					<content><![CDATA[你还没领悟爱的力量，等级达到60级以上再来挑战吧！]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -83,7 +83,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="miracle_wrong_pet" name="拂晓兔" icon="Pets/62/pet.png" size="122,134" pos="0,45">
+				<branch id="miracle_wrong_pet" name="拂晓兔" icon="Pets/pet/62.png" size="122,134" pos="0,45">
 					<content><![CDATA[只有通过极影特训激发爱的力量才能引发神迹，快把极影兔设为首发吧！]]></content>
 					<replyHandler>
 						<reply type="click">
@@ -93,7 +93,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="miracle_level_100" name="拂晓兔" icon="Pets/62/pet.png" size="122,134" pos="0,45">
+				<branch id="miracle_level_100" name="拂晓兔" icon="Pets/pet/62.png" size="122,134" pos="0,45">
 					<content><![CDATA[你需要继续累积爱的力量，等级达到100级再来挑战吧！]]></content>
 					<replyHandler>
 						<reply type="click">

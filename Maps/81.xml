@@ -11,34 +11,20 @@
 			<dialog>
 				<branch id="default" name="上尉门罗" icon="8101" size="119,91" pos="0,55">
 					<content><![CDATA[这里是英格瓦要塞，去迎接各种挑战吧！]]></content>
-					<replyHandler>
-						<reply type="click">
-							<description><![CDATA[好的]]></description>
-							<action>openDialog</action>
-							<param>null</param>
-						</reply>
-						<reply type="click">
-							<description><![CDATA[我想参与PVP对战！]]></description>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[PVP对战]]></description>
 							<action>openPanel</action>
 							<param>CreateRoom</param>
-						</reply>
-					</replyHandler>
-				</branch>
-			</dialog>
-			<eventHandler>
-				<button type="click">
-					<action>openDialog</action>
-					<param>default</param>
-				</button>
-			</eventHandler>
-		</npc>
-		<!--
-		<npc id="8102" resId="8102" name="" size="107,59" pos="429,186" color="255,255,255,0">
-			<description>要塞通道</description>
-			<transport>429,186</transport>
-			<dialog>
-				<branch id="default" name="要塞通道" icon="8102" size="107,59" pos="0,65">
-					<content><![CDATA[这里是英格瓦要塞，去迎接各种挑战吧！]]></content>
+						</func>
+						<func type="click">
+							<description><![CDATA[荣誉兑换]]></description>
+							<action>openPanel</action>
+							<param>ItemShop</param>
+							<param>type=honor</param>
+							<param>currency=3/0</param>
+						</func>
+					</functionHandler>
 					<replyHandler>
 						<reply type="click">
 							<description><![CDATA[好的]]></description>
@@ -55,7 +41,16 @@
 				</button>
 			</eventHandler>
 		</npc>
-		-->
+		<npc id="8102" resId="8102" name="" size="107,59" pos="429,186" color="255,255,255,255">
+			<description>要塞通道</description>
+			<transport>429,186</transport>
+			<eventHandler>
+				<button type="click">
+					<action>openPanel</action>
+					<param>MiniMap100</param>
+				</button>
+			</eventHandler>
+		</npc>
 		<npc id="8103" resId="8103" name="" size="198,180" pos="380,273" namePos="0,0">
 			<description>PVP对战</description>
 			<eventHandler>

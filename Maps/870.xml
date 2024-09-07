@@ -1,0 +1,502 @@
+<map name="能源之潮" category="9" id="870" color="192,192,192,255">
+	<fightMap>100011</fightMap>
+	<music category="1">
+		<bgm>MU_012</bgm>
+	</music>
+	<initialPoint>240,155</initialPoint>
+	<entities>
+		<npc id="87001" resId="Pets/pet/90" name="Lv 70 雷伊" size="80,142" pos="300,280" namePos="0,-10">
+			<description>雷伊</description>
+			<dialog>
+				<branch id="default" name="雷伊" icon="Pets/pet/90" size="80,142" pos="0,35">
+					<content><![CDATA[邪恶的气息正在逼近......]]></content>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[挑战雷伊]]></description>
+							<action>openDialog</action>
+							<param>pet</param>
+						</func>
+						<func type="click">
+							<description><![CDATA[获取纹章碎片]]></description>
+							<action>openDialog</action>
+							<param>emblem</param>
+						</func>
+						<func type="click">
+							<description><![CDATA[兑换纹章]]></description>
+							<action>openPanel</action>
+							<param>ItemShop</param>
+							<param>mode=buy</param>
+							<param>currency=400001/400002</param>
+							<param>item=300090/300234/400001/400002</param>
+							<param>title=兑换纹章</param>
+						</func>
+					</functionHandler>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[好可怕啊]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+				<branch id="pet" name="雷伊" icon="Pets/pet/90" size="80,142" pos="0,35">
+					<content><![CDATA[拿出你全部的实力挑战我吧！（挑战胜利获得雷伊）]]></content>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[我还没准备好]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+						<reply type="click">
+							<description><![CDATA[我准备好了]]></description>
+							<action>battle</action>
+							<param>default</param>
+						</reply>
+					</replyHandler>
+				</branch>
+				<branch id="emblem" name="雷伊" icon="Pets/pet/90" size="80,142" pos="0,35">
+					<content><![CDATA[战胜我有20%概率掉落纹章碎片，集齐6个就能兑换纹章。你准备好了吗？]]></content>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[我还没准备好]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+						<reply type="click">
+							<description><![CDATA[我准备好了]]></description>
+							<action>battle</action>
+							<param>emblem</param>
+						</reply>
+					</replyHandler>
+				</branch>
+				<branch id="reward" name="雷伊" icon="Pets/pet/90" size="80,142" pos="0,35">
+					<content><![CDATA[你的英勇赢得了1枚纹章碎片]]></content>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[太好了]]></description>
+							<action>setItem</action>
+							<param>add</param>
+							<param>400001,1</param>
+						</reply>
+						<reply type="branch">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=1枚雷伊纹章碎片已经放入背包</param>
+							<param>option_num=1</param>
+							<param>item_icon=item[400001]</param>
+						</reply>
+						<reply type="branch">
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<battle>
+				<branch id="default">
+					<settings count="6">
+						<mode>3</mode>
+					</settings>
+					<enemy>
+						<pet id="90" level="70">
+							<status>
+								<hp>2000</hp>
+							</status>
+							<initBuff>13,14,17,97,99</initBuff>
+							<headerSkill>-1001</headerSkill>
+							<loopSkill>-1001,10448,10448</loopSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>getPet</action>
+							<param>90,10,0</param>
+							<condition>activity[20004].done[lei][default]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=【雷伊】已经放入精灵仓库</param>
+							<param>item_icon=pet[90]</param>
+							<param>option_num=1</param>
+							<condition>activity[20004].done[lei][default]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>setActivity</action>
+							<param>20004</param>
+							<param>done[lei][default]=true</param>
+							<condition>activity[20004].done[lei][default]=[bool]false[default]false</condition>
+						</button>
+					</winHandler>
+				</branch>
+				<branch id="emblem">
+					<settings count="6">
+						<mode>3</mode>
+					</settings>
+					<enemy>
+						<pet id="90" level="70">
+							<status>
+								<atk>600</atk>
+								<mat>600</mat>
+								<def>400</def>
+								<mdf>400</mdf>
+								<hp>2000</hp>
+								<cri>15</cri>
+							</status>
+							<initBuff>13,14,17,20,41,42</initBuff>
+							<loopSkill>10442,10445,10448,10453</loopSkill>
+							<superSkill>10450</superSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>openDialog</action>
+							<param>reward</param>
+							<condition>random[0~100]LTE20</condition>
+						</button>
+					</winHandler>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<npc id="87002" resId="Pets/pet/234" name="Lv 70 凯萨" size="100,120" pos="380,320" namePos="0,-10">
+			<description>凯萨</description>
+			<dialog>
+				<branch id="default" name="凯萨" icon="Pets/pet/234" size="100,120" pos="0,55">
+					<content><![CDATA[邪恶的气息正在逼近......]]></content>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[挑战凯萨]]></description>
+							<action>openDialog</action>
+							<param>pet</param>
+						</func>
+						<func type="click">
+							<description><![CDATA[获取纹章碎片]]></description>
+							<action>openDialog</action>
+							<param>emblem</param>
+						</func>
+						<func type="click">
+							<description><![CDATA[兑换纹章]]></description>
+							<action>openPanel</action>
+							<param>ItemShop</param>
+							<param>mode=buy</param>
+							<param>currency=400001/400002</param>
+							<param>item=300090/300234/400001/400002</param>
+							<param>title=兑换纹章</param>
+						</func>
+					</functionHandler>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[好可怕啊]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+				<branch id="pet" name="凯萨" icon="Pets/pet/234" size="100,120" pos="0,55">
+					<content><![CDATA[拿出你全部的实力挑战我吧！（挑战胜利获得凯萨）]]></content>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[我还没准备好]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+						<reply type="click">
+							<description><![CDATA[我准备好了]]></description>
+							<action>battle</action>
+							<param>default</param>
+						</reply>
+					</replyHandler>
+				</branch>
+				<branch id="emblem" name="凯萨" icon="Pets/pet/234" size="100,120" pos="0,55">
+					<content><![CDATA[战胜我有20%概率掉落纹章碎片，集齐6个就能兑换纹章。你准备好了吗？]]></content>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[我还没准备好]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+						<reply type="click">
+							<description><![CDATA[我准备好了]]></description>
+							<action>battle</action>
+							<param>emblem</param>
+						</reply>
+					</replyHandler>
+				</branch>
+				<branch id="reward" name="凯萨" icon="Pets/pet/90" size="80,142" pos="0,55">
+					<content><![CDATA[你的英勇赢得了1枚纹章碎片]]></content>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[太好了]]></description>
+							<action>setItem</action>
+							<param>add</param>
+							<param>400002,1</param>
+						</reply>
+						<reply type="branch">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=1枚凯萨纹章碎片已经放入背包</param>
+							<param>option_num=1</param>
+							<param>item_icon=item[400002]</param>
+						</reply>
+						<reply type="branch">
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<battle>
+				<branch id="default">
+					<settings count="6">
+						<mode>3</mode>
+					</settings>
+					<enemy>
+						<pet id="234" level="70">
+							<status>
+								<atk>600</atk>
+								<mat>600</mat>
+								<def>400</def>
+								<mdf>400</mdf>
+								<hp>2000</hp>
+							</status>
+							<initBuff>13,14,17,20,45,99</initBuff>
+							<headerSkill>10482</headerSkill>
+							<loopSkill>10474,10480,10480</loopSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>getPet</action>
+							<param>234,10,0</param>
+							<condition>activity[20004].done[kaiser][default]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=【凯萨】已经放入精灵仓库</param>
+							<param>item_icon=pet[234]</param>
+							<param>option_num=1</param>
+							<condition>activity[20004].done[kaiser][default]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>setActivity</action>
+							<param>20004</param>
+							<param>done[kaiser][default]=true</param>
+							<condition>activity[20004].done[kaiser][default]=[bool]false[default]false</condition>
+						</button>
+					</winHandler>
+				</branch>
+				<branch id="emblem">
+					<settings count="6">
+						<mode>3</mode>
+					</settings>
+					<enemy>
+						<pet id="234" level="70">
+							<status>
+								<atk>600</atk>
+								<mat>600</mat>
+								<def>400</def>
+								<mdf>400</mdf>
+								<hp>2000</hp>
+								<cri>15</cri>
+							</status>
+							<initBuff>13,14,17,20,41,42</initBuff>
+							<headerSkill>10482</headerSkill>
+							<loopSkill>10474,10479,10478,10483</loopSkill>
+							<superSkill>10481</superSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>openDialog</action>
+							<param>reward</param>
+							<condition>random[0~100]LTE20</condition>
+						</button>
+					</winHandler>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<npc id="87003" resId="87001" name="Lv 105 影灵兽" size="240,200" pos="520,240" namePos="0,-10">
+			<description>影灵兽</description>
+			<dialog>
+				<branch id="default" name="影灵兽" icon="Pets/pet/988" size="120,100" pos="0,55">
+					<content><![CDATA[有光明的地方，必然会有影子]]></content>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[挑战影灵兽]]></description>
+							<action>battle</action>
+							<param>default</param>
+						</func>
+						<func type="click">
+							<description><![CDATA[获取影钩]]></description>
+							<action>openDialog</action>
+							<param>kei</param>
+						</func>
+						<func type="click">
+							<description><![CDATA[兑换道具]]></description>
+							<action>openPanel</action>
+							<param>ItemShop</param>
+							<param>mode=buy</param>
+							<param>currency=400003/2</param>
+							<param>item=110454/110485/400003</param>
+							<param>title=兑换道具</param>
+						</func>
+					</functionHandler>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[好可怕啊]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+				<branch id="kei" name="影灵兽" icon="Pets/pet/988" size="120,100" pos="0,55">
+					<content><![CDATA[造成100万以上的伤害可以获得2枚影钩，你准备好了吗]]></content>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[我还没准备好]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+						<reply type="click">
+							<description><![CDATA[我准备好了]]></description>
+							<action>battle</action>
+							<param>kei</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<battle>
+				<branch id="default">
+					<settings count="6">
+						<weather>9</weather>
+					</settings>
+					<enemy>
+						<pet id="988" level="105">
+							<status>
+								<hp>30000</hp>
+							</status>
+							<initBuff>14,17,20,-3011</initBuff>
+							<loopSkill>10619,10620,10624,10627,10629</loopSkill>
+							<superSkill>10628</superSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>getPet</action>
+							<param>988,100</param>
+							<condition>activity[soul].done[north][8]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=【影灵兽】已经放入精灵仓库</param>
+							<param>item_icon=pet[988]</param>
+							<param>option_num=1</param>
+							<condition>activity[soul].done[north][8]=[bool]false[default]false</condition>
+						</button>
+						<button type="auto">
+							<action>setActivity</action>
+							<param>soul</param>
+							<param>done[north][8]=true</param>
+							<condition>activity[soul].done[north][8]=[bool]false[default]false</condition>
+						</button>
+					</winHandler>
+				</branch>
+				<branch id="kei">
+					<settings count="6" simulate="true">
+						<mode>3</mode>
+					</settings>
+					<player>
+						<pet id="989" level="105">
+							<status>
+								<atk>600</atk>
+								<mat>600</mat>
+								<def>400</def>
+								<mdf>400</mdf>
+								<spd>500</spd>
+								<hp>50000</hp>
+							</status>
+							<initBuff>13,14,17,20,41,42,3075,-3009,-3010</initBuff>
+							<normalSkill>10589,10601,10591,10586</normalSkill>
+							<superSkill>10596</superSkill>
+						</pet>
+					</player>
+					<enemy>
+						<pet id="102561" level="105">
+							<status>
+								<atk>40000</atk>
+								<mat>40000</mat>
+								<def>400</def>
+								<mdf>400</mdf>
+								<spd>400</spd>
+								<hp>200000000</hp>
+							</status>
+							<initBuff>17,20</initBuff>
+							<loopSkill>10619,10620,10624,10627,10629</loopSkill>
+							<superSkill>10628</superSkill>
+						</pet>
+					</enemy>
+					<winHandler>
+						<button type="auto">
+							<action>setItem</action>
+							<param>add</param>
+							<param>400003,2</param>
+							<condition>battle.op.pet.status.lostHpGTE1000000</condition>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=2枚影钩已经放入背包</param>
+							<param>option_num=1</param>
+							<param>item_icon=item[400003]</param>
+							<condition>battle.op.pet.status.lostHpGTE1000000</condition>
+						</button>
+					</winHandler>
+					<loseHandler>
+						<button type="auto">
+							<action>setItem</action>
+							<param>add</param>
+							<param>400003,2</param>
+							<condition>battle.op.pet.status.lostHpGTE1000000</condition>
+						</button>
+						<button type="auto">
+							<action>openHintbox</action>
+							<param>type=Item</param>
+							<param>title=提示</param>
+							<param>content=2枚影钩已经放入背包</param>
+							<param>option_num=1</param>
+							<param>item_icon=item[400003]</param>
+							<condition>battle.op.pet.status.lostHpGTE1000000</condition>
+						</button>
+					</loseHandler>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+        <teleport id="1" name="玄云之冠" pos="130,100" targetMapId="850"/>
+	</entities>
+</map>

@@ -87,21 +87,21 @@
 						<button type="auto">
 							<action>setItem</action>
 							<param>add</param>
-							<param>1,500</param>
+							<param>10201,3</param>
 						</button>
 						<button type="auto">
 							<action>openHintbox</action>
 							<param>type=Item</param>
 							<param>title=提示</param>
-							<param>content=500 赛尔豆已经放入背包</param>
-							<param>item_icon=item[1]</param>
+							<param>content=3个砂糖甜饼已经放入背包</param>
+							<param>item_icon=item[10201]</param>
 							<param>option_num=1</param>
 						</button>
 						<button type="auto">
 							<action>openDialog</action>
 							<param>reward</param>
 							<condition>random[0~100]LTE10</condition>
-							<condition>activity[10001].done[1]=[bool]true[default]false</condition>
+							<condition>activity[10001].done[1]=[bool]false[default]false</condition>
 						</button>
 					</winHandler>
 				</branch>
@@ -205,7 +205,7 @@
 							<action>openDialog</action>
 							<param>reward</param>
 							<condition>random[0~100]LTE10</condition>
-							<condition>activity[10001].done[2]=[bool]true[default]false</condition>
+							<condition>activity[10001].done[2]=[bool]false[default]false</condition>
 						</button>
 					</winHandler>
 				</branch>
@@ -255,7 +255,7 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="pet_help" name="重甲独角" icon="Pets/148/pet.png" size="115,120" pos="0,25">
+				<branch id="pet_help" name="重甲独角" icon="Pets/pet/148.png" size="115,120" pos="0,25">
 					<content><![CDATA[等等！这次我来帮助你对抗青蜂队长！我在萨伦帝国不论怎么努力都不受重用，你的实力强大，我想跟随你获得更多的锻炼机会！]]></content>
 					<replyHandler>
 						<reply type="click">

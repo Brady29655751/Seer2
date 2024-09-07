@@ -7,28 +7,6 @@
 	</music>
 	<entities>
 		<!--
-		<npc id="5" resId="5" name="乔休尔" dir="0" width="75" height="100" pos="814,394" actorPos="672,441" path="">
-			<dialog npcId="5" transport="1,300,400">
-				<branch id="default">
-		        <node emotion="4"><![CDATA[能源呢？矿石呢？飞船起飞了吗，这到底是怎么了。我……决不能让飞船陷入困境，我可是工程师乔休尔。]]></node>
-                <reply action="close"><![CDATA[这个……那个……]]></reply>
-				</branch>
-			</dialog>
-			<functionality>
-				<node type="" name="“吞”！年兽出没！" params="nianshou" />
-				<node type="" name="5周年大游行" params="activityAnniversaryParade" />
-				<node type="module" name="矿石回收" params="OreSellPanel" />
-				<node type="shop" name="收集品商店" params="BusinessPanel {shopType:2}" />
-			</functionality>
-			<eventHandler>
-				<mouseOver>
-				<HandlerShowNpcSlogan><![CDATA[我可不能出半点岔子！]]></HandlerShowNpcSlogan>
-				</mouseOver>
-				<click>
-					<HandlerOpenDialogPanel/>
-				</click>
-			</eventHandler>
-		</npc>
 		<npc id="374" resId="374" name="星钻融合机" dir="0" width="75" height="120" pos="903,477" actorPos="273,294" path="">
 			<eventHandler>
 				<mouseOver>
@@ -51,6 +29,42 @@
 					<action>setNpcParam</action>
 					<param>4002</param>
 					<param>sprite=4002</param>
+				</button>
+				<button type="click">
+					<action>openPanel</action>
+					<param>ItemShop</param>
+					<param>mode=sell</param>
+					<param>type=mine</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<npc id="4004" resId="4004" name="乔休尔" size="95,98" pos="660,120">
+			<description>我可不能出半点岔子！</description>
+			<dialog>
+				<branch id="default" name="乔休尔" icon="4004" size="130,130" pos="0,45">
+					<content><![CDATA[能源呢？矿石呢？飞船起飞了吗，这到底是怎么了。我……决不能让飞船陷入困境，我可是工程师乔休尔。]]></content>
+					<functionHandler>
+						<func type="click">
+							<description><![CDATA[矿石回收]]></description>
+							<action>openPanel</action>
+							<param>ItemShop</param>
+							<param>mode=sell</param>
+							<param>type=mine</param>
+						</func>
+					</functionHandler>
+					<replyHandler>
+						<reply type="click">
+							<description><![CDATA[这个……那个……]]></description>
+							<action>openDialog</action>
+							<param>null</param>
+						</reply>
+					</replyHandler>
+				</branch>
+			</dialog>
+			<eventHandler>
+				<button type="click">
+					<action>openDialog</action>
+					<param>default</param>
 				</button>
 			</eventHandler>
 		</npc>

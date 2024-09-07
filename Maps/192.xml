@@ -1,0 +1,50 @@
+<map name="残骸通道" category="3" id="192" weather="0">
+    <fightMap>100003</fightMap>
+    <initialPoint>350,140</initialPoint>
+    <music category="3">
+    	<bgm>BGM_160</bgm>
+    	<fx>FX_120</fx>
+    </music>
+	<entities>
+		<npc id="19201" resId="Pets/pet/28.png" name="Lv21 蓝喵" size="47,35" pos="500,200" namePos="0,0">
+			<battle>
+				<branch id="default">
+					<settings count="6" capture="true"/>
+					<enemy>
+						<pet id="28" level="21">
+							<headerSkill>10402</headerSkill>
+							<loopSkill>10403</loopSkill>
+						</pet>
+					</enemy>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>battle</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<npc id="19202" resId="Pets/pet/28.png" name="Lv22 蓝喵" size="47,35" pos="720,140" namePos="0,0">
+			<battle>
+				<branch id="default">
+					<settings count="6" capture="true"/>
+					<enemy>
+						<pet id="28" level="22">
+							<headerSkill>10402</headerSkill>
+							<loopSkill>10403</loopSkill>
+						</pet>
+					</enemy>
+				</branch>
+			</battle>
+			<eventHandler>
+				<button type="click">
+					<action>battle</action>
+					<param>default</param>
+				</button>
+			</eventHandler>
+		</npc>
+		<teleport id="1" name="悲伤残骸" pos="720,300" targetMapId="193"/>
+		<teleport id="2" name="残骸入口" pos="220,85" targetMapId="191"/>
+	</entities>
+</map>

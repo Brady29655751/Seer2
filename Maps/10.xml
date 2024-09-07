@@ -41,73 +41,11 @@
 						</reply>
 					</replyHandler>
 				</branch>
-				<branch id="mission_1_default_1" name="船长辛迪" icon="1002" size="100,125" pos="0,40">
-					<content><![CDATA[各位好，我是船长辛迪。今天召集你们前来，是有一項紧急任务需要交给你们。]]></content>
-					<replyHandler>
-						<reply type="click">
-							<description><![CDATA[紧急任务？]]></description>
-							<action>openDialog</action>
-							<param>mission_1_default_2</param>
-						</reply>
-					</replyHandler>
-				</branch>
-				<branch id="mission_1_default_2" name="船长辛迪" icon="1002" size="100,125" pos="0,40">
-					<content><![CDATA[飞船在航行经过阿卡迪亚星时，由于引力过大而被吸入了卫星轨道，目前正环绕着这颗行星，无法逃脱。]]></content>
-					<replyHandler>
-						<reply type="click">
-							<description><![CDATA[无法逃脱！？]]></description>
-							<action>openDialog</action>
-							<param>mission_1_default_3</param>
-						</reply>
-					</replyHandler>
-				</branch>
-				<branch id="mission_1_default_3" name="船长辛迪" icon="1002" size="100,125" pos="0,40">
-					<content><![CDATA[为了维持飞船日常运转和逃离这颗行星，我们需要探索这颗星球并取得大量的资源。这就是你们的主要任务。]]></content>
-					<replyHandler>
-						<reply type="click">
-							<description><![CDATA[是！船长！]]></description>
-							<action>openDialog</action>
-							<param>mission_1_default_4</param>
-						</reply>
-					</replyHandler>
-				</branch>
-				<branch id="mission_1_default_4" name="船长辛迪" icon="1002" size="100,125" pos="0,40">
-					<content><![CDATA[先锋队已经提前勘察星球概况，其中草目氏族这片区域最适合探索，也是你们的第一个目标。具体细节去找克拉克教官了解一下吧！]]></content>
-					<replyHandler>
-						<reply type="click">
-							<description><![CDATA[……教官室怎么走？]]></description>
-							<action>openDialog</action>
-							<param>mission_1_default_5</param>
-						</reply>
-					</replyHandler>
-				</branch>
-				<branch id="mission_1_default_5" name="船长辛迪" icon="1002" size="100,125" pos="0,40">
-					<content><![CDATA[地图上通常都会有些白色的圆形传送阵，站上去就能前往其他地方。你也可以选择打开左下角的蓝色指北针，使用小地图快速传送到指定地点。]]></content>
-					<replyHandler>
-						<reply type="click">
-							<description><![CDATA[谢谢船长！我这就去！]]></description>
-							<action>openDialog</action>
-							<param>null</param>
-						</reply>
-						<reply type="branch">
-							<action>setMission</action>
-							<param>1</param>
-							<param>checkpoint</param>
-							<param>inspector</param>
-						</reply>
-					</replyHandler>
-				</branch>
 			</dialog>
 			<eventHandler>
 				<button type="click">
 					<action>openDialog</action>
-					<param>mission_1_default_1</param>
-					<condition>mission[1].checkpoint=default</condition>
-				</button>
-				<button type="click">
-					<action>openDialog</action>
 					<param>default</param>
-					<condition>mission[1].checkpointNOTdefault</condition>
 				</button>
 			</eventHandler>
 		</npc>
